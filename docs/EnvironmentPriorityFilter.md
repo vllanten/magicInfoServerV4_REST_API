@@ -1,4 +1,4 @@
-# MagicInfoServerV41RestApi.EnvironmentPriorityFilter
+# MagicInfoServerV4xRestApi.EnvironmentPriorityFilter
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# MagicInfoServerV41RestApi.ResponseBody
+# MagicInfoServerV4xRestApi.ResponseBody
 
 ## Properties
 Name | Type | Description | Notes

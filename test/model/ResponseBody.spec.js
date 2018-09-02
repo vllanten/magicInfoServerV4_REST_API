@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4.1 REST API
- * MagicInfo Server V4.1 REST API
+ * MagicInfo Server V4x REST API
+ * MagicInfo Server V4x REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV41RestApi);
+    factory(root.expect, root.MagicInfoServerV4xRestApi);
   }
-}(this, function(expect, MagicInfoServerV41RestApi) {
+}(this, function(expect, MagicInfoServerV4xRestApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV41RestApi.ResponseBody();
+    instance = new MagicInfoServerV4xRestApi.ResponseBody();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,55 +52,55 @@
   describe('ResponseBody', function() {
     it('should create an instance of ResponseBody', function() {
       // uncomment below and update the code to test ResponseBody
-      //var instane = new MagicInfoServerV41RestApi.ResponseBody();
-      //expect(instance).to.be.a(MagicInfoServerV41RestApi.ResponseBody);
+      //var instane = new MagicInfoServerV4xRestApi.ResponseBody();
+      //expect(instance).to.be.a(MagicInfoServerV4xRestApi.ResponseBody);
     });
 
     it('should have the property apiVersion (base name: "apiVersion")', function() {
       // uncomment below and update the code to test the property apiVersion
-      //var instane = new MagicInfoServerV41RestApi.ResponseBody();
+      //var instane = new MagicInfoServerV4xRestApi.ResponseBody();
       //expect(instance).to.be();
     });
 
     it('should have the property errorCode (base name: "errorCode")', function() {
       // uncomment below and update the code to test the property errorCode
-      //var instane = new MagicInfoServerV41RestApi.ResponseBody();
+      //var instane = new MagicInfoServerV4xRestApi.ResponseBody();
       //expect(instance).to.be();
     });
 
     it('should have the property errorMessage (base name: "errorMessage")', function() {
       // uncomment below and update the code to test the property errorMessage
-      //var instane = new MagicInfoServerV41RestApi.ResponseBody();
+      //var instane = new MagicInfoServerV4xRestApi.ResponseBody();
       //expect(instance).to.be();
     });
 
     it('should have the property items (base name: "items")', function() {
       // uncomment below and update the code to test the property items
-      //var instane = new MagicInfoServerV41RestApi.ResponseBody();
+      //var instane = new MagicInfoServerV4xRestApi.ResponseBody();
       //expect(instance).to.be();
     });
 
     it('should have the property pageSize (base name: "pageSize")', function() {
       // uncomment below and update the code to test the property pageSize
-      //var instane = new MagicInfoServerV41RestApi.ResponseBody();
+      //var instane = new MagicInfoServerV4xRestApi.ResponseBody();
       //expect(instance).to.be();
     });
 
     it('should have the property startIndex (base name: "startIndex")', function() {
       // uncomment below and update the code to test the property startIndex
-      //var instane = new MagicInfoServerV41RestApi.ResponseBody();
+      //var instane = new MagicInfoServerV4xRestApi.ResponseBody();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instane = new MagicInfoServerV41RestApi.ResponseBody();
+      //var instane = new MagicInfoServerV4xRestApi.ResponseBody();
       //expect(instance).to.be();
     });
 
     it('should have the property totalCount (base name: "totalCount")', function() {
       // uncomment below and update the code to test the property totalCount
-      //var instane = new MagicInfoServerV41RestApi.ResponseBody();
+      //var instane = new MagicInfoServerV4xRestApi.ResponseBody();
       //expect(instance).to.be();
     });
 

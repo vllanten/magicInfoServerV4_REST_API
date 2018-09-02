@@ -1,4 +1,4 @@
-# MagicInfoServerV41RestApi.ScheduleFilter
+# MagicInfoServerV4xRestApi.ScheduleFilter
 
 ## Properties
 Name | Type | Description | Notes

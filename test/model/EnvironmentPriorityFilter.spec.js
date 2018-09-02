@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4.1 REST API
- * MagicInfo Server V4.1 REST API
+ * MagicInfo Server V4x REST API
+ * MagicInfo Server V4x REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV41RestApi);
+    factory(root.expect, root.MagicInfoServerV4xRestApi);
   }
-}(this, function(expect, MagicInfoServerV41RestApi) {
+}(this, function(expect, MagicInfoServerV4xRestApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV41RestApi.EnvironmentPriorityFilter();
+    instance = new MagicInfoServerV4xRestApi.EnvironmentPriorityFilter();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,55 +52,55 @@
   describe('EnvironmentPriorityFilter', function() {
     it('should create an instance of EnvironmentPriorityFilter', function() {
       // uncomment below and update the code to test EnvironmentPriorityFilter
-      //var instane = new MagicInfoServerV41RestApi.EnvironmentPriorityFilter();
-      //expect(instance).to.be.a(MagicInfoServerV41RestApi.EnvironmentPriorityFilter);
+      //var instane = new MagicInfoServerV4xRestApi.EnvironmentPriorityFilter();
+      //expect(instance).to.be.a(MagicInfoServerV4xRestApi.EnvironmentPriorityFilter);
     });
 
     it('should have the property contentInfoDashboard (base name: "contentInfoDashboard")', function() {
       // uncomment below and update the code to test the property contentInfoDashboard
-      //var instane = new MagicInfoServerV41RestApi.EnvironmentPriorityFilter();
+      //var instane = new MagicInfoServerV4xRestApi.EnvironmentPriorityFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property deviceInfoDashboard (base name: "deviceInfoDashboard")', function() {
       // uncomment below and update the code to test the property deviceInfoDashboard
-      //var instane = new MagicInfoServerV41RestApi.EnvironmentPriorityFilter();
+      //var instane = new MagicInfoServerV4xRestApi.EnvironmentPriorityFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property noticeInfoDashboard (base name: "noticeInfoDashboard")', function() {
       // uncomment below and update the code to test the property noticeInfoDashboard
-      //var instane = new MagicInfoServerV41RestApi.EnvironmentPriorityFilter();
+      //var instane = new MagicInfoServerV4xRestApi.EnvironmentPriorityFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property playlistInfoDashboard (base name: "playlistInfoDashboard")', function() {
       // uncomment below and update the code to test the property playlistInfoDashboard
-      //var instane = new MagicInfoServerV41RestApi.EnvironmentPriorityFilter();
+      //var instane = new MagicInfoServerV4xRestApi.EnvironmentPriorityFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property scheduleInfoDashboard (base name: "scheduleInfoDashboard")', function() {
       // uncomment below and update the code to test the property scheduleInfoDashboard
-      //var instane = new MagicInfoServerV41RestApi.EnvironmentPriorityFilter();
+      //var instane = new MagicInfoServerV4xRestApi.EnvironmentPriorityFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property signInfoDashboard (base name: "signInfoDashboard")', function() {
       // uncomment below and update the code to test the property signInfoDashboard
-      //var instane = new MagicInfoServerV41RestApi.EnvironmentPriorityFilter();
+      //var instane = new MagicInfoServerV4xRestApi.EnvironmentPriorityFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property storageInfoDashboard (base name: "storageInfoDashboard")', function() {
       // uncomment below and update the code to test the property storageInfoDashboard
-      //var instane = new MagicInfoServerV41RestApi.EnvironmentPriorityFilter();
+      //var instane = new MagicInfoServerV4xRestApi.EnvironmentPriorityFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property userInfoDashboard (base name: "userInfoDashboard")', function() {
       // uncomment below and update the code to test the property userInfoDashboard
-      //var instane = new MagicInfoServerV41RestApi.EnvironmentPriorityFilter();
+      //var instane = new MagicInfoServerV4xRestApi.EnvironmentPriorityFilter();
       //expect(instance).to.be();
     });
 

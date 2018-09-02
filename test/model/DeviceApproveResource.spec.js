@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4.1 REST API
- * MagicInfo Server V4.1 REST API
+ * MagicInfo Server V4x REST API
+ * MagicInfo Server V4x REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV41RestApi);
+    factory(root.expect, root.MagicInfoServerV4xRestApi);
   }
-}(this, function(expect, MagicInfoServerV41RestApi) {
+}(this, function(expect, MagicInfoServerV4xRestApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV41RestApi.DeviceApproveResource();
+    instance = new MagicInfoServerV4xRestApi.DeviceApproveResource();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,73 +52,73 @@
   describe('DeviceApproveResource', function() {
     it('should create an instance of DeviceApproveResource', function() {
       // uncomment below and update the code to test DeviceApproveResource
-      //var instane = new MagicInfoServerV41RestApi.DeviceApproveResource();
-      //expect(instance).to.be.a(MagicInfoServerV41RestApi.DeviceApproveResource);
+      //var instane = new MagicInfoServerV4xRestApi.DeviceApproveResource();
+      //expect(instance).to.be.a(MagicInfoServerV4xRestApi.DeviceApproveResource);
     });
 
     it('should have the property calDate (base name: "calDate")', function() {
       // uncomment below and update the code to test the property calDate
-      //var instane = new MagicInfoServerV41RestApi.DeviceApproveResource();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceApproveResource();
       //expect(instance).to.be();
     });
 
     it('should have the property childCnt (base name: "childCnt")', function() {
       // uncomment below and update the code to test the property childCnt
-      //var instane = new MagicInfoServerV41RestApi.DeviceApproveResource();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceApproveResource();
       //expect(instance).to.be();
     });
 
     it('should have the property deviceId (base name: "deviceId")', function() {
       // uncomment below and update the code to test the property deviceId
-      //var instane = new MagicInfoServerV41RestApi.DeviceApproveResource();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceApproveResource();
       //expect(instance).to.be();
     });
 
     it('should have the property deviceName (base name: "deviceName")', function() {
       // uncomment below and update the code to test the property deviceName
-      //var instane = new MagicInfoServerV41RestApi.DeviceApproveResource();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceApproveResource();
       //expect(instance).to.be();
     });
 
     it('should have the property deviceType (base name: "deviceType")', function() {
       // uncomment below and update the code to test the property deviceType
-      //var instane = new MagicInfoServerV41RestApi.DeviceApproveResource();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceApproveResource();
       //expect(instance).to.be();
     });
 
     it('should have the property groupId (base name: "groupId")', function() {
       // uncomment below and update the code to test the property groupId
-      //var instane = new MagicInfoServerV41RestApi.DeviceApproveResource();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceApproveResource();
       //expect(instance).to.be();
     });
 
     it('should have the property hasChild (base name: "hasChild")', function() {
       // uncomment below and update the code to test the property hasChild
-      //var instane = new MagicInfoServerV41RestApi.DeviceApproveResource();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceApproveResource();
       //expect(instance).to.be();
     });
 
     it('should have the property ipAddress (base name: "ipAddress")', function() {
       // uncomment below and update the code to test the property ipAddress
-      //var instane = new MagicInfoServerV41RestApi.DeviceApproveResource();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceApproveResource();
       //expect(instance).to.be();
     });
 
     it('should have the property location (base name: "location")', function() {
       // uncomment below and update the code to test the property location
-      //var instane = new MagicInfoServerV41RestApi.DeviceApproveResource();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceApproveResource();
       //expect(instance).to.be();
     });
 
     it('should have the property organization (base name: "organization")', function() {
       // uncomment below and update the code to test the property organization
-      //var instane = new MagicInfoServerV41RestApi.DeviceApproveResource();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceApproveResource();
       //expect(instance).to.be();
     });
 
     it('should have the property slaveNumber (base name: "slaveNumber")', function() {
       // uncomment below and update the code to test the property slaveNumber
-      //var instane = new MagicInfoServerV41RestApi.DeviceApproveResource();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceApproveResource();
       //expect(instance).to.be();
     });
 

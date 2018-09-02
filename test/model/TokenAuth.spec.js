@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4.1 REST API
- * MagicInfo Server V4.1 REST API
+ * MagicInfo Server V4x REST API
+ * MagicInfo Server V4x REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV41RestApi);
+    factory(root.expect, root.MagicInfoServerV4xRestApi);
   }
-}(this, function(expect, MagicInfoServerV41RestApi) {
+}(this, function(expect, MagicInfoServerV4xRestApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV41RestApi.TokenAuth();
+    instance = new MagicInfoServerV4xRestApi.TokenAuth();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,13 +52,13 @@
   describe('TokenAuth', function() {
     it('should create an instance of TokenAuth', function() {
       // uncomment below and update the code to test TokenAuth
-      //var instane = new MagicInfoServerV41RestApi.TokenAuth();
-      //expect(instance).to.be.a(MagicInfoServerV41RestApi.TokenAuth);
+      //var instane = new MagicInfoServerV4xRestApi.TokenAuth();
+      //expect(instance).to.be.a(MagicInfoServerV4xRestApi.TokenAuth);
     });
 
     it('should have the property token (base name: "token")', function() {
       // uncomment below and update the code to test the property token
-      //var instane = new MagicInfoServerV41RestApi.TokenAuth();
+      //var instane = new MagicInfoServerV4xRestApi.TokenAuth();
       //expect(instance).to.be();
     });
 

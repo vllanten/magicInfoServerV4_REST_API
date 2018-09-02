@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4.1 REST API
- * MagicInfo Server V4.1 REST API
+ * MagicInfo Server V4x REST API
+ * MagicInfo Server V4x REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/Error'), require('../model/MessageScheduleFilter'), require('../model/MessageScheduleResource'), require('../model/ResponseBody'));
   } else {
     // Browser globals (root is window)
-    if (!root.MagicInfoServerV41RestApi) {
-      root.MagicInfoServerV41RestApi = {};
+    if (!root.MagicInfoServerV4xRestApi) {
+      root.MagicInfoServerV4xRestApi = {};
     }
-    root.MagicInfoServerV41RestApi.MessageScheduleControllerApi = factory(root.MagicInfoServerV41RestApi.ApiClient, root.MagicInfoServerV41RestApi.Error, root.MagicInfoServerV41RestApi.MessageScheduleFilter, root.MagicInfoServerV41RestApi.MessageScheduleResource, root.MagicInfoServerV41RestApi.ResponseBody);
+    root.MagicInfoServerV4xRestApi.MessageScheduleControllerApi = factory(root.MagicInfoServerV4xRestApi.ApiClient, root.MagicInfoServerV4xRestApi.Error, root.MagicInfoServerV4xRestApi.MessageScheduleFilter, root.MagicInfoServerV4xRestApi.MessageScheduleResource, root.MagicInfoServerV4xRestApi.ResponseBody);
   }
 }(this, function(ApiClient, Error, MessageScheduleFilter, MessageScheduleResource, ResponseBody) {
   'use strict';

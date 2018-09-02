@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4.1 REST API
- * MagicInfo Server V4.1 REST API
+ * MagicInfo Server V4x REST API
+ * MagicInfo Server V4x REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV41RestApi);
+    factory(root.expect, root.MagicInfoServerV4xRestApi);
   }
-}(this, function(expect, MagicInfoServerV41RestApi) {
+}(this, function(expect, MagicInfoServerV4xRestApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV41RestApi.DeviceTimeHolidayResource();
+    instance = new MagicInfoServerV4xRestApi.DeviceTimeHolidayResource();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,49 +52,49 @@
   describe('DeviceTimeHolidayResource', function() {
     it('should create an instance of DeviceTimeHolidayResource', function() {
       // uncomment below and update the code to test DeviceTimeHolidayResource
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeHolidayResource();
-      //expect(instance).to.be.a(MagicInfoServerV41RestApi.DeviceTimeHolidayResource);
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeHolidayResource();
+      //expect(instance).to.be.a(MagicInfoServerV4xRestApi.DeviceTimeHolidayResource);
     });
 
     it('should have the property command (base name: "command")', function() {
       // uncomment below and update the code to test the property command
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeHolidayResource();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeHolidayResource();
       //expect(instance).to.be();
     });
 
     it('should have the property day1 (base name: "day1")', function() {
       // uncomment below and update the code to test the property day1
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeHolidayResource();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeHolidayResource();
       //expect(instance).to.be();
     });
 
     it('should have the property day2 (base name: "day2")', function() {
       // uncomment below and update the code to test the property day2
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeHolidayResource();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeHolidayResource();
       //expect(instance).to.be();
     });
 
     it('should have the property deviceId (base name: "deviceId")', function() {
       // uncomment below and update the code to test the property deviceId
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeHolidayResource();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeHolidayResource();
       //expect(instance).to.be();
     });
 
     it('should have the property holidaySeq (base name: "holidaySeq")', function() {
       // uncomment below and update the code to test the property holidaySeq
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeHolidayResource();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeHolidayResource();
       //expect(instance).to.be();
     });
 
     it('should have the property month1 (base name: "month1")', function() {
       // uncomment below and update the code to test the property month1
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeHolidayResource();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeHolidayResource();
       //expect(instance).to.be();
     });
 
     it('should have the property month2 (base name: "month2")', function() {
       // uncomment below and update the code to test the property month2
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeHolidayResource();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeHolidayResource();
       //expect(instance).to.be();
     });
 

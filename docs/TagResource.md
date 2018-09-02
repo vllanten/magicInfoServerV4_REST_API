@@ -1,4 +1,4 @@
-# MagicInfoServerV41RestApi.TagResource
+# MagicInfoServerV4xRestApi.TagResource
 
 ## Properties
 Name | Type | Description | Notes

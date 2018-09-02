@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4.1 REST API
- * MagicInfo Server V4.1 REST API
+ * MagicInfo Server V4x REST API
+ * MagicInfo Server V4x REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV41RestApi);
+    factory(root.expect, root.MagicInfoServerV4xRestApi);
   }
-}(this, function(expect, MagicInfoServerV41RestApi) {
+}(this, function(expect, MagicInfoServerV4xRestApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV41RestApi.DeviceTimeTimerConf();
+    instance = new MagicInfoServerV4xRestApi.DeviceTimeTimerConf();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,109 +52,109 @@
   describe('DeviceTimeTimerConf', function() {
     it('should create an instance of DeviceTimeTimerConf', function() {
       // uncomment below and update the code to test DeviceTimeTimerConf
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeTimerConf();
-      //expect(instance).to.be.a(MagicInfoServerV41RestApi.DeviceTimeTimerConf);
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeTimerConf();
+      //expect(instance).to.be.a(MagicInfoServerV4xRestApi.DeviceTimeTimerConf);
     });
 
     it('should have the property timerDataCount (base name: "timerDataCount")', function() {
       // uncomment below and update the code to test the property timerDataCount
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeTimerConf();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeTimerConf();
       //expect(instance).to.be();
     });
 
     it('should have the property timerHolidayEnable (base name: "timerHolidayEnable")', function() {
       // uncomment below and update the code to test the property timerHolidayEnable
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeTimerConf();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeTimerConf();
       //expect(instance).to.be();
     });
 
     it('should have the property timerManualWeekday (base name: "timerManualWeekday")', function() {
       // uncomment below and update the code to test the property timerManualWeekday
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeTimerConf();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeTimerConf();
       //expect(instance).to.be();
     });
 
     it('should have the property timerOffAmpm (base name: "timerOffAmpm")', function() {
       // uncomment below and update the code to test the property timerOffAmpm
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeTimerConf();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeTimerConf();
       //expect(instance).to.be();
     });
 
     it('should have the property timerOffH (base name: "timerOffH")', function() {
       // uncomment below and update the code to test the property timerOffH
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeTimerConf();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeTimerConf();
       //expect(instance).to.be();
     });
 
     it('should have the property timerOffM (base name: "timerOffM")', function() {
       // uncomment below and update the code to test the property timerOffM
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeTimerConf();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeTimerConf();
       //expect(instance).to.be();
     });
 
     it('should have the property timerOffManualWeekday (base name: "timerOffManualWeekday")', function() {
       // uncomment below and update the code to test the property timerOffManualWeekday
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeTimerConf();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeTimerConf();
       //expect(instance).to.be();
     });
 
     it('should have the property timerOffRepeat (base name: "timerOffRepeat")', function() {
       // uncomment below and update the code to test the property timerOffRepeat
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeTimerConf();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeTimerConf();
       //expect(instance).to.be();
     });
 
     it('should have the property timerOffStatus (base name: "timerOffStatus")', function() {
       // uncomment below and update the code to test the property timerOffStatus
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeTimerConf();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeTimerConf();
       //expect(instance).to.be();
     });
 
     it('should have the property timerOnAmpm (base name: "timerOnAmpm")', function() {
       // uncomment below and update the code to test the property timerOnAmpm
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeTimerConf();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeTimerConf();
       //expect(instance).to.be();
     });
 
     it('should have the property timerOnH (base name: "timerOnH")', function() {
       // uncomment below and update the code to test the property timerOnH
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeTimerConf();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeTimerConf();
       //expect(instance).to.be();
     });
 
     it('should have the property timerOnM (base name: "timerOnM")', function() {
       // uncomment below and update the code to test the property timerOnM
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeTimerConf();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeTimerConf();
       //expect(instance).to.be();
     });
 
     it('should have the property timerOnStatus (base name: "timerOnStatus")', function() {
       // uncomment below and update the code to test the property timerOnStatus
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeTimerConf();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeTimerConf();
       //expect(instance).to.be();
     });
 
     it('should have the property timerRepeat (base name: "timerRepeat")', function() {
       // uncomment below and update the code to test the property timerRepeat
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeTimerConf();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeTimerConf();
       //expect(instance).to.be();
     });
 
     it('should have the property timerSeq (base name: "timerSeq")', function() {
       // uncomment below and update the code to test the property timerSeq
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeTimerConf();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeTimerConf();
       //expect(instance).to.be();
     });
 
     it('should have the property timerSource (base name: "timerSource")', function() {
       // uncomment below and update the code to test the property timerSource
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeTimerConf();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeTimerConf();
       //expect(instance).to.be();
     });
 
     it('should have the property timerVolume (base name: "timerVolume")', function() {
       // uncomment below and update the code to test the property timerVolume
-      //var instane = new MagicInfoServerV41RestApi.DeviceTimeTimerConf();
+      //var instane = new MagicInfoServerV4xRestApi.DeviceTimeTimerConf();
       //expect(instance).to.be();
     });
 

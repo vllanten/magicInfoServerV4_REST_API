@@ -1,4 +1,4 @@
-# MagicInfoServerV41RestApi.DeviceTimeClockConf
+# MagicInfoServerV4xRestApi.DeviceTimeClockConf
 
 ## Properties
 Name | Type | Description | Notes

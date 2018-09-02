@@ -1,4 +1,4 @@
-# MagicInfoServerV41RestApi.TokenAuth
+# MagicInfoServerV4xRestApi.TokenAuth
 
 ## Properties
 Name | Type | Description | Notes

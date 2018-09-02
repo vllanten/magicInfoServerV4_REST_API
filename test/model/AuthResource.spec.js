@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4.1 REST API
- * MagicInfo Server V4.1 REST API
+ * MagicInfo Server V4x REST API
+ * MagicInfo Server V4x REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV41RestApi);
+    factory(root.expect, root.MagicInfoServerV4xRestApi);
   }
-}(this, function(expect, MagicInfoServerV41RestApi) {
+}(this, function(expect, MagicInfoServerV4xRestApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV41RestApi.AuthResource();
+    instance = new MagicInfoServerV4xRestApi.AuthResource();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,19 +52,19 @@
   describe('AuthResource', function() {
     it('should create an instance of AuthResource', function() {
       // uncomment below and update the code to test AuthResource
-      //var instane = new MagicInfoServerV41RestApi.AuthResource();
-      //expect(instance).to.be.a(MagicInfoServerV41RestApi.AuthResource);
+      //var instane = new MagicInfoServerV4xRestApi.AuthResource();
+      //expect(instance).to.be.a(MagicInfoServerV4xRestApi.AuthResource);
     });
 
     it('should have the property username (base name: "username")', function() {
       // uncomment below and update the code to test the property username
-      //var instane = new MagicInfoServerV41RestApi.AuthResource();
+      //var instane = new MagicInfoServerV4xRestApi.AuthResource();
       //expect(instance).to.be();
     });
 
     it('should have the property password (base name: "password")', function() {
       // uncomment below and update the code to test the property password
-      //var instane = new MagicInfoServerV41RestApi.AuthResource();
+      //var instane = new MagicInfoServerV4xRestApi.AuthResource();
       //expect(instance).to.be();
     });
 

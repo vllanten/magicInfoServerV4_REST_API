@@ -1,4 +1,4 @@
-# MagicInfoServerV41RestApi.DeviceDisplayCustomLogoResource
+# MagicInfoServerV4xRestApi.DeviceDisplayCustomLogoResource
 
 ## Properties
 Name | Type | Description | Notes

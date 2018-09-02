@@ -1,4 +1,4 @@
-# MagicInfoServerV41RestApi.MessageResource
+# MagicInfoServerV4xRestApi.MessageResource
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# MagicInfoServerV41RestApi.PlaylistFilter
+# MagicInfoServerV4xRestApi.PlaylistFilter
 
 ## Properties
 Name | Type | Description | Notes

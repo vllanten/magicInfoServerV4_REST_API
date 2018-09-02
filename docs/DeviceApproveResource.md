@@ -1,4 +1,4 @@
-# MagicInfoServerV41RestApi.DeviceApproveResource
+# MagicInfoServerV4xRestApi.DeviceApproveResource
 
 ## Properties
 Name | Type | Description | Notes

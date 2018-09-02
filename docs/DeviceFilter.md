@@ -1,4 +1,4 @@
-# MagicInfoServerV41RestApi.DeviceFilter
+# MagicInfoServerV4xRestApi.DeviceFilter
 
 ## Properties
 Name | Type | Description | Notes

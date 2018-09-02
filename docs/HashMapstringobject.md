@@ -1,4 +1,4 @@
-# MagicInfoServerV41RestApi.HashMapstringobject
+# MagicInfoServerV4xRestApi.HashMapstringobject
 
 ## Properties
 Name | Type | Description | Notes

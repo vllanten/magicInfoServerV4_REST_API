@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4.1 REST API
- * MagicInfo Server V4.1 REST API
+ * MagicInfo Server V4x REST API
+ * MagicInfo Server V4x REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/Error'), require('../model/PlaylistFilter'), require('../model/PlaylistResource'), require('../model/ResponseBody'));
   } else {
     // Browser globals (root is window)
-    if (!root.MagicInfoServerV41RestApi) {
-      root.MagicInfoServerV41RestApi = {};
+    if (!root.MagicInfoServerV4xRestApi) {
+      root.MagicInfoServerV4xRestApi = {};
     }
-    root.MagicInfoServerV41RestApi.PlaylistControllerApi = factory(root.MagicInfoServerV41RestApi.ApiClient, root.MagicInfoServerV41RestApi.Error, root.MagicInfoServerV41RestApi.PlaylistFilter, root.MagicInfoServerV41RestApi.PlaylistResource, root.MagicInfoServerV41RestApi.ResponseBody);
+    root.MagicInfoServerV4xRestApi.PlaylistControllerApi = factory(root.MagicInfoServerV4xRestApi.ApiClient, root.MagicInfoServerV4xRestApi.Error, root.MagicInfoServerV4xRestApi.PlaylistFilter, root.MagicInfoServerV4xRestApi.PlaylistResource, root.MagicInfoServerV4xRestApi.ResponseBody);
   }
 }(this, function(ApiClient, Error, PlaylistFilter, PlaylistResource, ResponseBody) {
   'use strict';

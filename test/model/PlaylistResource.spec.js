@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4.1 REST API
- * MagicInfo Server V4.1 REST API
+ * MagicInfo Server V4x REST API
+ * MagicInfo Server V4x REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV41RestApi);
+    factory(root.expect, root.MagicInfoServerV4xRestApi);
   }
-}(this, function(expect, MagicInfoServerV41RestApi) {
+}(this, function(expect, MagicInfoServerV4xRestApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV41RestApi.PlaylistResource();
+    instance = new MagicInfoServerV4xRestApi.PlaylistResource();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,127 +52,127 @@
   describe('PlaylistResource', function() {
     it('should create an instance of PlaylistResource', function() {
       // uncomment below and update the code to test PlaylistResource
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
-      //expect(instance).to.be.a(MagicInfoServerV41RestApi.PlaylistResource);
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
+      //expect(instance).to.be.a(MagicInfoServerV4xRestApi.PlaylistResource);
     });
 
     it('should have the property categoryList (base name: "categoryList")', function() {
       // uncomment below and update the code to test the property categoryList
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
       //expect(instance).to.be();
     });
 
     it('should have the property contentCount (base name: "contentCount")', function() {
       // uncomment below and update the code to test the property contentCount
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
       //expect(instance).to.be();
     });
 
     it('should have the property contentList (base name: "contentList")', function() {
       // uncomment below and update the code to test the property contentList
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
       //expect(instance).to.be();
     });
 
     it('should have the property creatorId (base name: "creatorId")', function() {
       // uncomment below and update the code to test the property creatorId
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
       //expect(instance).to.be();
     });
 
     it('should have the property deviceType (base name: "deviceType")', function() {
       // uncomment below and update the code to test the property deviceType
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
       //expect(instance).to.be();
     });
 
     it('should have the property deviceTypeVersion (base name: "deviceTypeVersion")', function() {
       // uncomment below and update the code to test the property deviceTypeVersion
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
       //expect(instance).to.be();
     });
 
     it('should have the property groupId (base name: "groupId")', function() {
       // uncomment below and update the code to test the property groupId
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
       //expect(instance).to.be();
     });
 
     it('should have the property groupName (base name: "groupName")', function() {
       // uncomment below and update the code to test the property groupName
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
       //expect(instance).to.be();
     });
 
     it('should have the property lastModifiedDate (base name: "lastModifiedDate")', function() {
       // uncomment below and update the code to test the property lastModifiedDate
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
       //expect(instance).to.be();
     });
 
     it('should have the property metaData (base name: "metaData")', function() {
       // uncomment below and update the code to test the property metaData
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
       //expect(instance).to.be();
     });
 
     it('should have the property playTime (base name: "playTime")', function() {
       // uncomment below and update the code to test the property playTime
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
       //expect(instance).to.be();
     });
 
     it('should have the property playlistId (base name: "playlistId")', function() {
       // uncomment below and update the code to test the property playlistId
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
       //expect(instance).to.be();
     });
 
     it('should have the property playlistName (base name: "playlistName")', function() {
       // uncomment below and update the code to test the property playlistName
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
       //expect(instance).to.be();
     });
 
     it('should have the property playlistType (base name: "playlistType")', function() {
       // uncomment below and update the code to test the property playlistType
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
       //expect(instance).to.be();
     });
 
     it('should have the property shareFlag (base name: "shareFlag")', function() {
       // uncomment below and update the code to test the property shareFlag
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
       //expect(instance).to.be();
     });
 
     it('should have the property shuffleFlag (base name: "shuffleFlag")', function() {
       // uncomment below and update the code to test the property shuffleFlag
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
       //expect(instance).to.be();
     });
 
     it('should have the property thumbFileName (base name: "thumbFileName")', function() {
       // uncomment below and update the code to test the property thumbFileName
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
       //expect(instance).to.be();
     });
 
     it('should have the property thumbFilePath (base name: "thumbFilePath")', function() {
       // uncomment below and update the code to test the property thumbFilePath
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
       //expect(instance).to.be();
     });
 
     it('should have the property totalSize (base name: "totalSize")', function() {
       // uncomment below and update the code to test the property totalSize
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
       //expect(instance).to.be();
     });
 
     it('should have the property versionId (base name: "versionId")', function() {
       // uncomment below and update the code to test the property versionId
-      //var instane = new MagicInfoServerV41RestApi.PlaylistResource();
+      //var instane = new MagicInfoServerV4xRestApi.PlaylistResource();
       //expect(instance).to.be();
     });
 
