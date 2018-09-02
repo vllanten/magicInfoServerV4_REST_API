@@ -22,7 +22,7 @@ approveContents
 
 ### Example
 ```javascript
-var MagicInfoServerV41RestApi = require('magic_info_server_v41___rest_api');
+var MagicInfoServerV41RestApi = require('magic_info_server_v41_rest_api');
 var defaultClient = MagicInfoServerV41RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
@@ -76,7 +76,7 @@ deleteContent
 
 ### Example
 ```javascript
-var MagicInfoServerV41RestApi = require('magic_info_server_v41___rest_api');
+var MagicInfoServerV41RestApi = require('magic_info_server_v41_rest_api');
 var defaultClient = MagicInfoServerV41RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
@@ -127,7 +127,7 @@ forceDeleteContent
 
 ### Example
 ```javascript
-var MagicInfoServerV41RestApi = require('magic_info_server_v41___rest_api');
+var MagicInfoServerV41RestApi = require('magic_info_server_v41_rest_api');
 var defaultClient = MagicInfoServerV41RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
@@ -178,7 +178,7 @@ getActiveContentInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV41RestApi = require('magic_info_server_v41___rest_api');
+var MagicInfoServerV41RestApi = require('magic_info_server_v41_rest_api');
 var defaultClient = MagicInfoServerV41RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
@@ -229,7 +229,7 @@ listAllContent
 
 ### Example
 ```javascript
-var MagicInfoServerV41RestApi = require('magic_info_server_v41___rest_api');
+var MagicInfoServerV41RestApi = require('magic_info_server_v41_rest_api');
 var defaultClient = MagicInfoServerV41RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
@@ -283,7 +283,7 @@ listContent
 
 ### Example
 ```javascript
-var MagicInfoServerV41RestApi = require('magic_info_server_v41___rest_api');
+var MagicInfoServerV41RestApi = require('magic_info_server_v41_rest_api');
 var defaultClient = MagicInfoServerV41RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
@@ -334,7 +334,7 @@ listDashboardContentInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV41RestApi = require('magic_info_server_v41___rest_api');
+var MagicInfoServerV41RestApi = require('magic_info_server_v41_rest_api');
 var defaultClient = MagicInfoServerV41RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
@@ -379,7 +379,7 @@ uploadContent
 
 ### Example
 ```javascript
-var MagicInfoServerV41RestApi = require('magic_info_server_v41___rest_api');
+var MagicInfoServerV41RestApi = require('magic_info_server_v41_rest_api');
 var defaultClient = MagicInfoServerV41RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key

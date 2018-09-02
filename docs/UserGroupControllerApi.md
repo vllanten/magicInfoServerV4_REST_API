@@ -17,7 +17,7 @@ listUserGroupChild
 
 ### Example
 ```javascript
-var MagicInfoServerV41RestApi = require('magic_info_server_v41___rest_api');
+var MagicInfoServerV41RestApi = require('magic_info_server_v41_rest_api');
 var defaultClient = MagicInfoServerV41RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
@@ -68,7 +68,7 @@ listUserGroupInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV41RestApi = require('magic_info_server_v41___rest_api');
+var MagicInfoServerV41RestApi = require('magic_info_server_v41_rest_api');
 var defaultClient = MagicInfoServerV41RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
@@ -119,7 +119,7 @@ listUserGroupOrgan
 
 ### Example
 ```javascript
-var MagicInfoServerV41RestApi = require('magic_info_server_v41___rest_api');
+var MagicInfoServerV41RestApi = require('magic_info_server_v41_rest_api');
 var defaultClient = MagicInfoServerV41RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key

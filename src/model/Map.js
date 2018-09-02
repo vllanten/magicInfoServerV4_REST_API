@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4.1 - REST API
- * MagicInfo Server V4.1 - REST API
+ * MagicInfo Server V4.1 REST API
+ * MagicInfo Server V4.1 REST API
  *
  * OpenAPI spec version: 1.0.0
  *

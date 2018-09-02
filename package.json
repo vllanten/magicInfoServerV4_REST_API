@@ -1,7 +1,7 @@
 {
-  "name": "magic_info_server_v41___rest_api",
+  "name": "magic_info_server_v41_rest_api",
   "version": "1.0.0",
-  "description": "MagicInfo_Server_V4_1___REST_API",
+  "description": "MagicInfo_Server_V4_1_REST_API",
   "license": "Unlicense",
   "main": "src/index.js",
   "scripts": {
