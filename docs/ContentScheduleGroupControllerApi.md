@@ -1,6 +1,6 @@
 # MagicInfoServerV41RestApi.ContentScheduleGroupControllerApi
 
-All URIs are relative to *http://127.0.0.1:7001/MagicInfo*
+All URIs are relative to *http://127.0.0.2:7001/MagicInfo*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
