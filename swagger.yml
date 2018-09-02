@@ -1,0 +1,4846 @@
+swagger: '2.0'
+info:
+  description: "MagicInfo Server V4.1 - REST API."
+  version: '1.0.0'
+  title: "MagicInfo Server V4.1 - REST API"
+  termsOfService: http://127.0.0.1
+  contact: 
+    name: Victor Llanten
+host: '127.0.0.1:7001'
+schemes: 
+  - "http"
+  - "https"
+basePath: /MagicInfo
+tags:
+  - name: auth
+    description: Auth Controller
+  - name: message-schedule-group-controller
+    description: Message Schedule Group Controller
+  - name: environment-controller
+    description: Environment Controller
+  - name: playlist-controller
+    description: Playlist Controller
+  - name: message-schedule-controller
+    description: Message Schedule Controller
+  - name: playlist-group-controller
+    description: Playlist Group Controller
+  - name: user-group-controller
+    description: User Group Controller
+  - name: content-controller
+    description: Content Controller
+  - name: content-group-controller
+    description: Content Group Controller
+  - name: content-schedule-group-controller
+    description: Content Schedule Group Controller
+  - name: user-controller
+    description: User Controller
+  - name: device-group-controller
+    description: Device Group Controller
+  - name: content-schedule-controller
+    description: Content Schedule Controller
+  - name: device-controller
+    description: Device Controller
+paths:
+  /auth:
+    post:
+      tags:
+        - auth
+      summary: Authorization
+      description: "alsjdlksajd lkas dlsa jd"
+      operationId: Authorization
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: user-login
+          description: resource
+          required: true
+          schema:
+            $ref: '#/definitions/AuthResource'
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/TokenAuth'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /auth/refresh:
+    get:
+      tags:
+        - auth
+      summary: Refresh Authorization Token
+      operationId: refreshAuthorization
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/TokenAuth'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/cms/contents:
+    get:
+      tags:
+        - content-controller
+      summary: listAllContent
+      operationId: listAllContentUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: startIndex
+          in: query
+          description: startIndex
+          required: true
+          type: integer
+          format: int32
+        - name: pageSize
+          in: query
+          description: pageSize
+          required: true
+          type: integer
+          format: int32
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/cms/contents/dashboard:
+    get:
+      tags:
+        - content-controller
+      summary: listDashboardContentInfo
+      operationId: listDashboardContentInfoUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/cms/contents/filter:
+    post:
+      tags:
+        - content-controller
+      summary: listContent
+      operationId: listContentUsingPOST_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: filter
+          description: filter
+          required: true
+          schema:
+            $ref: '#/definitions/ContentFilter'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/cms/contents/force/{contentId}:
+    delete:
+      tags:
+        - content-controller
+      summary: forceDeleteContent
+      operationId: forceDeleteContentUsingDELETE_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: contentId
+          in: path
+          description: contentId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/cms/contents/groups:
+    get:
+      tags:
+        - content-group-controller
+      summary: listDefaultGroup
+      operationId: listDefaultGroupUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/cms/contents/groups/{groupId}:
+    get:
+      tags:
+        - content-group-controller
+      summary: getGroup
+      operationId: getGroupUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: groupId
+          in: path
+          description: groupId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/cms/contents/groups/{groupId}/child:
+    get:
+      tags:
+        - content-group-controller
+      summary: listChildGroup
+      operationId: listChildGroupUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: groupId
+          in: path
+          description: groupId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/cms/contents/{contentId}:
+    get:
+      tags:
+        - content-controller
+      summary: getActiveContentInfo
+      operationId: getActiveContentInfoUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: contentId
+          in: path
+          description: contentId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+    delete:
+      tags:
+        - content-controller
+      summary: deleteContent
+      operationId: deleteContentUsingDELETE_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: contentId
+          in: path
+          description: contentId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/cms/contents/{contentId}/approval:
+    put:
+      tags:
+        - content-controller
+      summary: approveContents
+      operationId: approveContentsUsingPUT_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: contentId
+          in: path
+          description: contentId
+          required: true
+          type: string
+        - in: body
+          name: resource
+          description: resource
+          required: true
+          schema:
+            $ref: '#/definitions/ContentApproveResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/cms/contents/{groupId}:
+    post:
+      tags:
+        - content-controller
+      summary: uploadContent
+      operationId: uploadContentUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: groupId
+          in: path
+          description: groupId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/cms/playlists:
+    get:
+      tags:
+        - playlist-controller
+      summary: listAllPlaylist
+      operationId: listAllPlaylistUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: startIndex
+          in: query
+          description: startIndex
+          required: true
+          type: integer
+          format: int32
+        - name: pageSize
+          in: query
+          description: pageSize
+          required: true
+          type: integer
+          format: int32
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      tags:
+        - playlist-controller
+      summary: createPlaylist
+      operationId: createPlaylistUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/PlaylistResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/cms/playlists/dashboard:
+    get:
+      tags:
+        - playlist-controller
+      summary: getDashboardPlaylistInfo
+      operationId: getDashboardPlaylistInfoUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/cms/playlists/filter:
+    post:
+      tags:
+        - playlist-controller
+      summary: listPlaylist
+      operationId: listPlaylistUsingPOST_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: filter
+          description: filter
+          required: true
+          schema:
+            $ref: '#/definitions/PlaylistFilter'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/cms/playlists/groups:
+    get:
+      tags:
+        - playlist-group-controller
+      summary: listDefaultGroup
+      operationId: listDefaultGroupUsingGET_2
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/cms/playlists/groups/{groupId}:
+    get:
+      tags:
+        - playlist-group-controller
+      summary: getGroup
+      operationId: getGroupUsingGET_3
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: groupId
+          in: path
+          description: groupId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/cms/playlists/groups/{groupId}/child:
+    get:
+      tags:
+        - playlist-group-controller
+      summary: listChildGroup
+      operationId: listChildGroupUsingGET_2
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: groupId
+          in: path
+          description: groupId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/cms/playlists/{playlistId}:
+    get:
+      tags:
+        - playlist-controller
+      summary: getActivePlaylistInfo
+      operationId: getActivePlaylistInfoUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: playlistId
+          in: path
+          description: playlistId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+    put:
+      tags:
+        - playlist-controller
+      summary: editPlaylist
+      operationId: editPlaylistUsingPUT
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: playlistId
+          in: path
+          description: playlistId
+          required: true
+          type: string
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/PlaylistResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+    delete:
+      tags:
+        - playlist-controller
+      summary: deletePlaylist
+      operationId: deletePlaylistUsingDELETE
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: playlistId
+          in: path
+          description: playlistId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/cms/playlists/{playlistId}/copy:
+    put:
+      tags:
+        - playlist-controller
+      summary: copyPlaylist
+      operationId: copyPlaylistUsingPUT_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: playlistId
+          in: path
+          description: playlistId
+          required: true
+          type: string
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/PlaylistResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/dms/schedule/contents:
+    get:
+      tags:
+        - content-schedule-controller
+      summary: listContentScheduleAll
+      operationId: listContentScheduleAllUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: startIndex
+          in: query
+          description: startIndex
+          required: true
+          type: integer
+          format: int32
+        - name: pageSize
+          in: query
+          description: pageSize
+          required: true
+          type: integer
+          format: int32
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      tags:
+        - content-schedule-controller
+      summary: createContentSchedule
+      operationId: createContentScheduleUsingPOST_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/ContentScheduleResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/dms/schedule/contents/dashboard:
+    get:
+      tags:
+        - content-schedule-controller
+      summary: listDashboardScheduleInfo
+      operationId: listDashboardScheduleInfoUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/dms/schedule/contents/filter:
+    post:
+      tags:
+        - content-schedule-controller
+      summary: listContentScheduleByGroup
+      operationId: listContentScheduleByGroupUsingPOST_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: filter
+          description: filter
+          required: true
+          schema:
+            $ref: '#/definitions/ScheduleFilter'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/dms/schedule/contents/groups:
+    get:
+      tags:
+        - content-schedule-group-controller
+      summary: getRootGroups
+      operationId: getRootGroupsUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/dms/schedule/contents/groups/{groupId}:
+    get:
+      tags:
+        - content-schedule-group-controller
+      summary: listContentScheduleGroupInfo
+      operationId: listContentScheduleGroupInfoUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: groupId
+          in: path
+          description: groupId
+          required: true
+          type: integer
+          format: int64
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/dms/schedule/contents/groups/{groupId}/child:
+    get:
+      tags:
+        - content-schedule-group-controller
+      summary: getChildGroups
+      operationId: getChildGroupsUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: groupId
+          in: path
+          description: groupId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/dms/schedule/contents/{programId}:
+    get:
+      tags:
+        - content-schedule-controller
+      summary: getProgramInfo
+      operationId: getProgramInfoUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: programId
+          in: path
+          description: programId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+    put:
+      tags:
+        - content-schedule-controller
+      summary: editContentSchedule
+      operationId: editContentScheduleUsingPUT
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: programId
+          in: path
+          description: programId
+          required: true
+          type: string
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/ContentScheduleResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+    delete:
+      tags:
+        - content-schedule-controller
+      summary: deleteContentSchedule
+      operationId: deleteContentScheduleUsingDELETE
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+      parameters:
+        - name: programId
+          in: path
+          description: programId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/dms/schedule/contents/{programId}/copy:
+    put:
+      tags:
+        - content-schedule-controller
+      summary: copyContentSchedule
+      operationId: copyContentScheduleUsingPUT_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: programId
+          in: path
+          description: programId
+          required: true
+          type: string
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/ContentScheduleResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/dms/schedule/contents/{programId}/deploy:
+    put:
+      tags:
+        - content-schedule-controller
+      summary: deployContentSchedule
+      operationId: deployContentScheduleUsingPUT
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: programId
+          in: path
+          description: programId
+          required: true
+          type: string
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/ContentScheduleResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/dms/schedule/contents/{programId}/publishStatus:
+    get:
+      tags:
+        - content-schedule-controller
+      summary: getPublishStatus
+      operationId: getPublishStatusUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: programId
+          in: path
+          description: programId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/dms/schedule/messages:
+    get:
+      tags:
+        - message-schedule-controller
+      summary: listAllMessageSchedule
+      operationId: listAllMessageScheduleUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: startIndex
+          in: query
+          description: startIndex
+          required: true
+          type: integer
+          format: int32
+        - name: pageSize
+          in: query
+          description: pageSize
+          required: true
+          type: integer
+          format: int32
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      tags:
+        - message-schedule-controller
+      summary: createMessageSchedule
+      operationId: createMessageScheduleUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/MessageScheduleResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/dms/schedule/messages/filter:
+    post:
+      tags:
+        - message-schedule-controller
+      summary: listMessage
+      operationId: listMessageUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: filter
+          description: filter
+          required: true
+          schema:
+            $ref: '#/definitions/MessageScheduleFilter'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/dms/schedule/messages/groups:
+    get:
+      tags:
+        - message-schedule-group-controller
+      summary: getRootGroups
+      operationId: getRootGroupsUsingGET_2
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/dms/schedule/messages/groups/{groupId}:
+    get:
+      tags:
+        - message-schedule-group-controller
+      summary: listMessageScheduleGroupInfo
+      operationId: listMessageScheduleGroupInfoUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: groupId
+          in: path
+          description: groupId
+          required: true
+          type: integer
+          format: int64
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/dms/schedule/messages/groups/{groupId}/child:
+    get:
+      tags:
+        - message-schedule-group-controller
+      summary: getChildGroups
+      operationId: getChildGroupsUsingGET_3
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: groupId
+          in: path
+          description: groupId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/dms/schedule/messages/{messageId}:
+    get:
+      tags:
+        - message-schedule-controller
+      summary: getMessageInfo
+      operationId: getMessageInfoUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: messageId
+          in: path
+          description: messageId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+    put:
+      tags:
+        - message-schedule-controller
+      summary: editMessageSchedule
+      operationId: editMessageScheduleUsingPUT_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: messageId
+          in: path
+          description: messageId
+          required: true
+          type: string
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/MessageScheduleResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+    delete:
+      tags:
+        - message-schedule-controller
+      summary: deleteMessageSchedule
+      operationId: deleteMessageScheduleUsingDELETE_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: messageId
+          in: path
+          description: messageId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/dms/schedule/messages/{messageId}/copy:
+    put:
+      tags:
+        - message-schedule-controller
+      summary: copyMessageSchedule
+      operationId: copyMessageScheduleUsingPUT_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: messageId
+          in: path
+          description: messageId
+          required: true
+          type: string
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/MessageScheduleResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/dms/schedule/messages/{messageId}/deploy:
+    put:
+      tags:
+        - message-schedule-controller
+      summary: deployMessageSchedule
+      operationId: deployMessageScheduleUsingPUT
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: messageId
+          in: path
+          description: messageId
+          required: true
+          type: string
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/MessageScheduleResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/ems/category/{categoryId}:
+    get:
+      tags:
+        - environment-controller
+      summary: getCategoryInfo
+      operationId: getCategoryInfoUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: categoryId
+          in: path
+          description: categoryId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/ems/dashboard:
+    get:
+      tags:
+        - environment-controller
+      summary: listDashboardInfo
+      operationId: listDashboardInfoUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: Get the current using dashboard information
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: Internal server error due to incorrect dashboard information
+          schema:
+            $ref: '#/definitions/Error'
+    put:
+      tags:
+        - environment-controller
+      summary: updateDashboardPriority
+      operationId: updateDashboardPriorityUsingPUT
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: filter
+          description: filter
+          required: true
+          schema:
+            $ref: '#/definitions/EnvironmentPriorityFilter'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: Selected dashboard item was updated
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: Internal server error due to incorrect dashboard information
+    delete:
+      tags:
+        - environment-controller
+      summary: deleteDashboard
+      operationId: deleteDashboardUsingDELETE_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: dashboardName
+          in: query
+          description: dashboardName
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: Selected dashboard item was deleted
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: Internal server error due to incorrect dashboard information
+  /restapi/v1.0/ems/dashboard/create:
+    get:
+      tags:
+        - environment-controller
+      summary: createDashboard
+      operationId: createDashboardUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: dashboardName
+          in: query
+          description: dashboardName
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '201':
+          description: Get the current using dashboard information
+        '500':
+          description: Internal server error due to incorrect dashboard information
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/ems/dashboard/login:
+    get:
+      tags:
+        - environment-controller
+      summary: listDashboardLoginInfo
+      operationId: listDashboardLoginInfoUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: Get the login information
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: Internal server error due to incorrect dashboard information
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/ems/dashboard/notice:
+    get:
+      tags:
+        - environment-controller
+      summary: listDashboardNoticeInfo
+      operationId: listDashboardNoticeInfoUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: Get the notice information
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: Internal server error due to incorrect dashboard information
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/ems/dashboard/notice/edit:
+    get:
+      tags:
+        - environment-controller
+      summary: listEditNoticeInfo
+      operationId: listEditNoticeInfoUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: noticeId
+          in: query
+          description: noticeId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: Get the notice detail view information
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: Internal server error due to incorrect dashboard information
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      tags:
+        - environment-controller
+      summary: createNoticeInfo
+      operationId: createNoticeInfoUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: filter
+          description: filter
+          required: true
+          schema:
+            $ref: '#/definitions/EnvironmentNoticeFilter'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '201':
+          description: Selected notice information was created
+        '500':
+          description: Internal server error due to incorrect dashboard information
+    put:
+      tags:
+        - environment-controller
+      summary: updateNoticeInfo
+      operationId: updateNoticeInfoUsingPUT_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: filter
+          description: filter
+          required: true
+          schema:
+            $ref: '#/definitions/EnvironmentNoticeFilter'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: Selected notice information was updated
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: Internal server error due to incorrect dashboard information
+    delete:
+      tags:
+        - environment-controller
+      summary: deleteNoticeInfo
+      operationId: deleteNoticeInfoUsingDELETE
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: noticeId
+          in: query
+          description: noticeId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: Selected notice information was deleted
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: Internal server error due to incorrect dashboard information
+  /restapi/v1.0/ems/dashboard/storage:
+    get:
+      tags:
+        - environment-controller
+      summary: listDashboardStorageInfo
+      operationId: listDashboardStorageInfoUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: Get the storage information
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: Internal server error due to incorrect dashboard information
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/ems/device/check:
+    get:
+      tags:
+        - environment-controller
+      summary: getDeviceStatusInfo
+      operationId: getDeviceStatusInfoUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: get server setup info
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: Internal server error due to incorrect dashboard information
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/ems/license:
+    get:
+      tags:
+        - environment-controller
+      summary: listLicense
+      operationId: listLicenseUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: Get the license information
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: Internal server error due to incorrect dashboard information
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/ems/license/check:
+    get:
+      tags:
+        - environment-controller
+      summary: checkLicenseStatus
+      operationId: checkLicenseStatusUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: Get License Status
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: Internal server error due to incorrect dashboard information
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/ems/license/check/detail:
+    get:
+      tags:
+        - environment-controller
+      summary: getLicenseCheckDetail
+      operationId: getLicenseCheckDetailUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: Get License Status and Device Count
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: Internal server error due to incorrect dashboard information
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/ems/menu:
+    get:
+      tags:
+        - environment-controller
+      summary: listMenu
+      operationId: listMenuUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: Get the available menu
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: Internal server error due to incorrect dashboard information
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/ems/menu/count:
+    get:
+      tags:
+        - environment-controller
+      summary: getMenuItemCount
+      operationId: getMenuItemCountUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: get server setup info
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: Internal server error due to incorrect dashboard information
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/ems/setup:
+    get:
+      tags:
+        - environment-controller
+      summary: getServerSetupInfo
+      operationId: getServerSetupInfoUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: get server setup info
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: Internal server error due to incorrect dashboard information
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/ems/tag:
+    post:
+      tags:
+        - environment-controller
+      summary: getTagListInfo
+      operationId: getTagListInfoUsingPOST_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/TagResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/rms/devices:
+    get:
+      tags:
+        - device-controller
+      summary: listAllDevice
+      operationId: listAllDeviceUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: startIndex
+          in: query
+          description: startIndex
+          required: true
+          type: integer
+          format: int32
+        - name: pageSize
+          in: query
+          description: pageSize
+          required: true
+          type: integer
+          format: int32
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/rms/devices/dashboard:
+    get:
+      tags:
+        - device-controller
+      summary: getDashboardDeviceInfo
+      operationId: getDashboardDeviceInfoUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/rms/devices/filter:
+    post:
+      tags:
+        - device-controller
+      summary: filterDeviceList
+      operationId: filterDeviceListUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/DeviceFilter'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/rms/devices/groups:
+    get:
+      tags:
+        - device-group-controller
+      summary: listDeviceGroupOrgan
+      operationId: listDeviceGroupOrganUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/rms/devices/groups/{groupId}:
+    get:
+      tags:
+        - device-group-controller
+      summary: listDeviceGroupInfo
+      operationId: listDeviceGroupInfoUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: groupId
+          in: path
+          description: groupId
+          required: true
+          type: integer
+          format: int64
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/rms/devices/groups/{groupId}/child:
+    get:
+      tags:
+        - device-group-controller
+      summary: listDeviceGroupChild
+      operationId: listDeviceGroupChildUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: groupId
+          in: path
+          description: groupId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/rms/devices/{deviceId}:
+    get:
+      tags:
+        - device-controller
+      summary: getDevice
+      operationId: getDeviceUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+    delete:
+      tags:
+        - device-controller
+      summary: deleteDevice
+      operationId: deleteDeviceUsingDELETE
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/DeviceFilter'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/rms/devices/{deviceId}/approval:
+    put:
+      tags:
+        - device-controller
+      summary: approveDevice
+      operationId: approveDeviceUsingPUT
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/DeviceApproveResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/rms/devices/{deviceId}/cabinet:
+    post:
+      tags:
+        - device-controller
+      summary: getCabinetList
+      operationId: getCabinetListUsingPOST_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/DeviceFilter'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+    put:
+      tags:
+        - device-controller
+      summary: updateCabinetInfo
+      operationId: updateCabinetInfoUsingPUT
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/DeviceLedCabinetResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/rms/devices/{deviceId}/display:
+    get:
+      tags:
+        - device-controller
+      summary: getDisplayControlInfo
+      operationId: getDisplayControlInfoUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+    put:
+      tags:
+        - device-controller
+      summary: updateDisplayInfo
+      operationId: updateDisplayInfoUsingPUT
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/DeviceDisplayConfResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/rms/devices/{deviceId}/display/{requestId}:
+    get:
+      tags:
+        - device-controller
+      summary: getUpdatedDisplayInfoResult
+      operationId: getUpdatedDisplayInfoResultUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+        - name: requestId
+          in: path
+          description: requestId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/rms/devices/{deviceId}/general:
+    get:
+      tags:
+        - device-controller
+      summary: getGeneralInfo
+      operationId: getGeneralInfoUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+    put:
+      tags:
+        - device-controller
+      summary: updateGeneral
+      operationId: updateGeneralUsingPUT
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/DeviceGeneralConfResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/rms/devices/{deviceId}/general/info:
+    put:
+      tags:
+        - device-controller
+      summary: updateGeneralInfo
+      operationId: updateGeneralInfoUsingPUT
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/DeviceGeneralConfResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/rms/devices/{deviceId}/general/{requestId}:
+    get:
+      tags:
+        - device-controller
+      summary: getUpdatedGeneralInfoResult
+      operationId: getUpdatedGeneralInfoResultUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+        - name: requestId
+          in: path
+          description: requestId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/rms/devices/{deviceId}/move:
+    put:
+      tags:
+        - device-controller
+      summary: moveDevice
+      operationId: moveDeviceUsingPUT
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/DeviceFilter'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/rms/devices/{deviceId}/rmserver/start:
+    get:
+      tags:
+        - device-controller
+      summary: startRmServerVnc
+      operationId: startRmServerVncUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/rms/devices/{deviceId}/rmserver/stop:
+    get:
+      tags:
+        - device-controller
+      summary: stopRmServerVnc
+      operationId: stopRmServerVncUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/rms/devices/{deviceId}/security:
+    get:
+      tags:
+        - device-controller
+      summary: getSecurityControlInfo
+      operationId: getSecurityControlInfoUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+    put:
+      tags:
+        - device-controller
+      summary: updateSecurityInfo
+      operationId: updateSecurityInfoUsingPUT
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/DeviceSecurityConfResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/rms/devices/{deviceId}/setup:
+    get:
+      tags:
+        - device-controller
+      summary: getSetupInfo
+      operationId: getSetupInfoUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+    put:
+      tags:
+        - device-controller
+      summary: updateSetupInfo
+      operationId: updateSetupInfoUsingPUT
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/DeviceSystemSetupConfResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/rms/devices/{deviceId}/setup/{requestId}:
+    get:
+      tags:
+        - device-controller
+      summary: getUpdatedSetupInfoResult
+      operationId: getUpdatedSetupInfoResultUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+        - name: requestId
+          in: path
+          description: requestId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/rms/devices/{deviceId}/status/display:
+    get:
+      tags:
+        - device-controller
+      summary: getCurrentStatusDisplay
+      operationId: getCurrentStatusDisplayUsingGET_3
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/rms/devices/{deviceId}/status/display/{requestId}:
+    get:
+      tags:
+        - device-controller
+      summary: getCurrentStatusDisplay
+      operationId: getCurrentStatusDisplayUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+        - name: requestId
+          in: path
+          description: requestId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/rms/devices/{deviceId}/status/security:
+    get:
+      tags:
+        - device-controller
+      summary: getCurrentStatusSecurity
+      operationId: getCurrentStatusSecurityUsingGET_3
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/rms/devices/{deviceId}/status/security/{requestId}:
+    get:
+      tags:
+        - device-controller
+      summary: getCurrentStatusSecurity
+      operationId: getCurrentStatusSecurityUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+        - name: requestId
+          in: path
+          description: requestId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/rms/devices/{deviceId}/status/time:
+    get:
+      tags:
+        - device-controller
+      summary: getCurrentStatusTime
+      operationId: getCurrentStatusTimeUsingGET_3
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/rms/devices/{deviceId}/status/time/{requestId}:
+    get:
+      tags:
+        - device-controller
+      summary: getCurrentStatusTime
+      operationId: getCurrentStatusTimeUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+        - name: requestId
+          in: path
+          description: requestId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/rms/devices/{deviceId}/time:
+    get:
+      tags:
+        - device-controller
+      summary: getTimeInfo
+      operationId: getTimeInfoUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+    put:
+      tags:
+        - device-controller
+      summary: updateTimeInfo
+      operationId: updateTimeInfoUsingPUT_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+        - in: body
+          name: params
+          description: params
+          required: true
+          schema:
+            $ref: '#/definitions/DeviceTimeconfResource'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+  /restapi/v1.0/rms/devices/{deviceId}/time/{requestId}:
+    get:
+      tags:
+        - device-controller
+      summary: getUpdatedTimeInfoResult
+      operationId: getUpdatedTimeInfoResultUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: deviceId
+          in: path
+          description: deviceId
+          required: true
+          type: string
+        - name: requestId
+          in: path
+          description: requestId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/ums/users:
+    post:
+      tags:
+        - user-controller
+      summary: createUser
+      operationId: createUserUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: filter
+          description: filter
+          required: true
+          schema:
+            $ref: '#/definitions/UserFilter'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '201':
+          description: New User was created
+        '409':
+          description: Duplicated user id
+        '422':
+          description: incorrect input entity
+        '500':
+          description: Internal server error due to incorrect user information
+  /restapi/v1.0/ums/users/dashboard:
+    get:
+      tags:
+        - user-controller
+      summary: listDashboardUserInfo
+      operationId: listDashboardUserInfoUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: Found the current user dashboard data
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: Internal server error due to incorrect user information
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/ums/users/groups:
+    get:
+      tags:
+        - user-group-controller
+      summary: listUserGroupOrgan
+      operationId: listUserGroupOrganUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/ums/users/groups/{groupId}:
+    get:
+      tags:
+        - user-group-controller
+      summary: listUserGroupInfo
+      operationId: listUserGroupInfoUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: groupId
+          in: path
+          description: groupId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/ums/users/groups/{groupId}/child:
+    get:
+      tags:
+        - user-group-controller
+      summary: listUserGroupChild
+      operationId: listUserGroupChildUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: groupId
+          in: path
+          description: groupId
+          required: true
+          type: string
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: server error
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/ums/users/me:
+    get:
+      tags:
+        - user-controller
+      summary: Get specific admin
+      description: Fetch the admin user details
+      operationId: listMyInfoUsingGET
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: Given admin user found
+          schema:
+            $ref: '#/definitions/Response'
+        '400':
+          description: Bad request due to decoding the data
+        '404':
+          description: Given admin user not found
+        '412':
+          description: Pre condition failed due to required data not found
+        '500':
+          description: Internal server error due to encoding the data
+          schema:
+            $ref: '#/definitions/Error'
+    put:
+      tags:
+        - user-controller
+      summary: updateMyInfo
+      operationId: updateMyInfoUsingPUT_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: filter
+          description: filter
+          required: true
+          schema:
+            $ref: '#/definitions/UserFilter'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: MyInfo was updated
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '422':
+          description: incorrect input entity
+        '500':
+          description: Internal server error due to incorrect user information
+  /restapi/v1.0/ums/users/organization:
+    get:
+      tags:
+        - user-controller
+      summary: listUserOrgan
+      operationId: listUserOrganUsingGET_1
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: Found the organization information
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '500':
+          description: Internal server error due to incorrect user information
+          schema:
+            $ref: '#/definitions/Error'
+  /restapi/v1.0/ums/users/signup:
+    post:
+      tags:
+        - user-controller
+      summary: createUserSignUp
+      operationId: createUserSignUpUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: filter
+          description: filter
+          required: true
+          schema:
+            $ref: '#/definitions/UserFilter'
+      security:
+        - api_key: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/ResponseBody'
+        '201':
+          description: New User was created
+        '409':
+          description: Duplicated user id
+        '422':
+          description: incorrect input entity
+        '500':
+          description: Internal server error due to incorrect user information
+securityDefinitions:
+  api_key:
+    type: apiKey
+    name: api_key
+    in: header
+definitions:
+  DeviceTimeClockConf:
+    type: object
+    properties:
+      clockAmpm:
+        type: string
+      clockDay:
+        type: string
+      clockH:
+        type: string
+      clockM:
+        type: string
+      clockMon:
+        type: string
+      clockY1:
+        type: string
+      clockY2:
+        type: string
+      deviceId:
+        type: string
+      deviceModelCode:
+        type: string
+      deviceModelName:
+        type: string
+      deviceName:
+        type: string
+  DeviceDisplayConfSubResource:
+    type: object
+    properties:
+      advDownloadStatusOsd:
+        type: string
+      advMdcOsd:
+        type: string
+      advNoSignalOsd:
+        type: string
+      advOsdChanged:
+        type: string
+      advOsdChangedStatus:
+        type: string
+      advSourceOsd:
+        type: string
+      autoSourceChanged:
+        type: boolean
+      autoSourceRecovery:
+        type: string
+      autoSourceSecondary:
+        type: string
+      autoSourceSwitching:
+        type: string
+      autoSourceprimary:
+        type: string
+      mntAutoChanged:
+        type: boolean
+      mntAutoIsEnable:
+        type: string
+      mntAutoMaxTime:
+        type: string
+      mntAutoMaxValue:
+        type: string
+      mntAutoMinTime:
+        type: string
+      mntAutoMinValue:
+        type: string
+      pixelShiftChanged:
+        type: boolean
+      pixelShiftEnable:
+        type: string
+      pixelShiftH:
+        type: string
+      pixelShiftTime:
+        type: string
+      pixelShiftV:
+        type: string
+      scrSafeChanged:
+        type: boolean
+      scrSafeEndTime:
+        type: string
+      scrSafeMode:
+        type: string
+      scrSafePeriod:
+        type: string
+      scrSafeStartTime:
+        type: string
+      scrSafeTime:
+        type: string
+      scrSafeTimer:
+        type: string
+      webBrowserChanged:
+        type: boolean
+      webBrowserHomepage:
+        type: string
+      webBrowserInterval:
+        type: string
+      webBrowserPageurl:
+        type: string
+      webBrowserZoom:
+        type: string
+  PlaylistResource:
+    type: object
+    required:
+      - contentCount
+      - creatorId
+      - deviceType
+      - deviceTypeVersion
+      - groupId
+      - groupName
+      - lastModifiedDate
+      - metaData
+      - playTime
+      - playlistName
+      - playlistType
+      - shareFlag
+      - shuffleFlag
+      - versionId
+    properties:
+      categoryList:
+        type: array
+        items:
+          type: object
+      contentCount:
+        type: integer
+        format: int32
+        example: 0
+      contentList:
+        type: array
+        items:
+          $ref: '#/definitions/PlaylistItemResource'
+      creatorId:
+        type: string
+        example: admin
+      deviceType:
+        type: string
+        example: SPLAYER
+      deviceTypeVersion:
+        type: string
+        example: '3.0'
+      groupId:
+        type: string
+        example: '1'
+      groupName:
+        type: string
+        example: default
+      lastModifiedDate:
+        type: string
+        example: '2016-01-01 00:00:00'
+      metaData:
+        type: string
+        example: '-'
+      playTime:
+        type: integer
+        format: int64
+        example: 0
+      playlistId:
+        type: string
+        example: 32FA85B4-2389-476C-845A-0FC6F1D10D81
+      playlistName:
+        type: string
+        example: New Playlist
+      playlistType:
+        type: string
+        example: '0'
+      shareFlag:
+        type: integer
+        format: int32
+        example: 1
+      shuffleFlag:
+        type: string
+        example: 'N'
+      thumbFileName:
+        type: string
+      thumbFilePath:
+        type: string
+      totalSize:
+        type: integer
+        format: int64
+      versionId:
+        type: integer
+        format: int64
+        example: 1
+  TagResource:
+    type: object
+    properties:
+      pageSize:
+        type: integer
+        format: int32
+        example: 10
+      startIndex:
+        type: integer
+        format: int32
+        example: 1
+      tagList:
+        type: array
+        items:
+          $ref: '#/definitions/Map'
+  MessageScheduleFilter:
+    type: object
+    properties:
+      deviceType:
+        type: string
+        example: SPLAYER
+      deviceTypeVersion:
+        type: number
+        format: float
+        example: 2
+      groupId:
+        type: string
+        example: '0'
+      groupType:
+        type: string
+        example: ALL
+      pageSize:
+        type: integer
+        format: int32
+        example: 10
+      searchText:
+        type: string
+        example: message
+      sortColumn:
+        type: string
+        example: modify_date
+      sortOrder:
+        type: string
+        example: desc
+      startIndex:
+        type: integer
+        format: int32
+        example: 0
+      status:
+        type: string
+        example: ALL
+  ContentApproveResource:
+    type: object
+    required:
+      - status
+    properties:
+      contentId:
+        type: string
+        example: 32FA85B4-2389-476C-845A-0FC6F1D10D81
+      opinion:
+        type: string
+        example: '-'
+      status:
+        type: string
+        example: APPROVED
+  DeviceGeneralConfResource:
+    type: object
+    properties:
+      deviceModelName:
+        type: string
+        example: DB32E
+        description: '[Required] : updateSetupInfo api'
+      deviceName:
+        type: string
+        example: testName
+        description: '[Required] : updateSetup api'
+      location:
+        type: string
+        example: testLoation
+        description: '[Required] : updateSetupInfo api'
+      modelNameList:
+        type: array
+        items:
+          type: string
+      power:
+        type: boolean
+  DeviceTimeconfResource:
+    type: object
+    properties:
+      deviceTimeHolidayList:
+        type: array
+        items:
+          $ref: '#/definitions/DeviceTimeHolidayResource'
+      holidayCnt:
+        type: integer
+        format: int64
+      inputSourceList:
+        type: array
+        items:
+          $ref: '#/definitions/HashMap«string,object»'
+      mdcUpdateTime:
+        $ref: '#/definitions/Timestamp'
+      separatableDevice:
+        type: boolean
+      timeClockConf:
+        $ref: '#/definitions/DeviceTimeClockConf'
+      timeCurrentTime:
+        type: string
+      timerClock:
+        type: string
+      timerConfTimer1:
+        $ref: '#/definitions/DeviceTimeTimerConf'
+      timerConfTimer2:
+        $ref: '#/definitions/DeviceTimeTimerConf'
+      timerConfTimer3:
+        $ref: '#/definitions/DeviceTimeTimerConf'
+      timerConfTimer4:
+        $ref: '#/definitions/DeviceTimeTimerConf'
+      timerConfTimer5:
+        $ref: '#/definitions/DeviceTimeTimerConf'
+      timerConfTimer6:
+        $ref: '#/definitions/DeviceTimeTimerConf'
+      timerConfTimer7:
+        $ref: '#/definitions/DeviceTimeTimerConf'
+      timerCount:
+        type: integer
+        format: int32
+      timerHoliday:
+        type: string
+      timer_holiday:
+        type: string
+  Timestamp:
+    type: object
+    properties:
+      date:
+        type: integer
+        format: int32
+      hours:
+        type: integer
+        format: int32
+      minutes:
+        type: integer
+        format: int32
+      month:
+        type: integer
+        format: int32
+      nanos:
+        type: integer
+        format: int32
+      seconds:
+        type: integer
+        format: int32
+      time:
+        type: integer
+        format: int64
+      year:
+        type: integer
+        format: int32
+  DeviceSystemSetupConfResource:
+    type: object
+    properties:
+      amsPlayMode:
+        type: string
+        example: '0'
+      autoComputerNameSet:
+        type: boolean
+        example: false
+      autoIpSet:
+        type: boolean
+        example: false
+      bandwidth:
+        type: integer
+        format: int64
+        example: 0
+      bgColor:
+        type: string
+        example: '000000'
+      computerName:
+        type: string
+        example: testComputerName
+      connectionLimitTime:
+        type: integer
+        format: int64
+        example: 5
+      contentMnt:
+        type: string
+        example: 365;200
+      contentReadyInterval:
+        type: integer
+        format: int64
+        example: 0
+      contentsDownloadMode:
+        type: integer
+        format: int64
+      contentsProgressEnable:
+        type: boolean
+        example: true
+      contentsProgressInterval:
+        type: integer
+        format: int64
+        example: 5
+      contentsProgressUnit:
+        type: string
+        example: '0'
+      dayLightSaving:
+        type: boolean
+        example: true
+      dayLightSavingManual:
+        type: string
+        example: '0;0;0;12:0;0;0;0;12:0;0'
+      downloadServer:
+        type: array
+        items:
+          $ref: '#/definitions/DeviceDownloadServerResource'
+      dstEndDay:
+        type: string
+      dstEndMonth:
+        type: string
+      dstEndTime:
+        type: string
+      dstEndWeek:
+        type: string
+      dstManualChanged:
+        type: boolean
+      dstStartDay:
+        type: string
+      dstStartMonth:
+        type: string
+      dstStartTime:
+        type: string
+      dstStartWeek:
+        type: string
+      dstTimeDifference:
+        type: string
+      filedataDelSize:
+        type: integer
+        format: int64
+        example: 0
+      ftpConnectMode:
+        type: string
+        example: ACTIVE
+      ftpPort:
+        type: integer
+        format: int64
+        example: 'null'
+      logMnt:
+        type: string
+        example: 0;30;50
+      magicinfoServerUrl:
+        type: string
+        example: 'http://10.88.73.221:7001/MagicInfo'
+      mntFolderPath:
+        type: string
+        example: /mtd_rwcommon/magicinfo/data
+      monitoringInterval:
+        type: integer
+        format: int64
+        example: 10
+      onlyDnServer:
+        type: boolean
+      playMode:
+        type: integer
+        format: int64
+        example: 0
+      playerResolution:
+        type: string
+        example: 'null'
+      playerStartTimeout:
+        type: integer
+        format: int64
+        example: 0
+      proofOfPlayMnt:
+        type: string
+        example: 30;50
+      proxyException:
+        type: string
+        example: '127.0.0.1:16107;localhost'
+      proxySetting:
+        type: string
+        example: 0;;
+      repositoryPath:
+        type: string
+        example: /mtd_rwcommon/magicinfo/repository
+      resetPassword:
+        type: integer
+        format: int64
+        example: 0
+      screenCaptureInterval:
+        type: integer
+        format: int64
+        example: 10
+      screenRotation:
+        type: integer
+        format: int64
+        example: 0
+      statisticsFileRefresh:
+        type: string
+      switchTime:
+        type: string
+        example: '1:1'
+      systemRestartInterval:
+        type: string
+        example: 'Mon 04:00'
+      tagIdList:
+        type: string
+      tagList:
+        type: array
+        items:
+          $ref: '#/definitions/Map'
+      timeZoneIndex:
+        type: string
+        example: '(GMT+09:00) Osaka, Sapporo, Tokyo'
+      timeZoneList:
+        type: array
+        items:
+          $ref: '#/definitions/HashMap«string,object»'
+      triggerInterval:
+        type: integer
+        format: int64
+        example: 5
+      tunnelingServer:
+        type: string
+        example: 0.0.0.0
+      urlLauncherAddress:
+        type: string
+      urlLauncherTimeout:
+        type: string
+      useMpplayer:
+        type: boolean
+        example: true
+  DeviceSecurityConfResource:
+    type: object
+    properties:
+      isInitSecurity:
+        type: boolean
+        example: false
+      miscAllLock:
+        type: integer
+        format: int64
+        example: 0
+      miscBlockNetworkConnection:
+        type: integer
+        format: int64
+        example: 0
+      miscBlockUsbPort:
+        type: integer
+        format: int64
+        example: 0
+      miscPanelLock:
+        type: integer
+        format: int64
+        example: 0
+      miscRemocon:
+        type: integer
+        format: int64
+        example: 1
+      miscWhiteList:
+        type: string
+        example: '192.168.0.10:7001-7005;192.168.0.11:*'
+      mntSafetyLock:
+        type: integer
+        format: int64
+        example: 0
+      touchControlLock:
+        type: integer
+        format: int64
+        example: 0
+  EnvironmentPriorityFilter:
+    type: object
+    properties:
+      contentInfoDashboard:
+        type: integer
+        format: int32
+        example: 3
+      deviceInfoDashboard:
+        type: integer
+        format: int32
+        example: 6
+      noticeInfoDashboard:
+        type: integer
+        format: int32
+        example: 2
+      playlistInfoDashboard:
+        type: integer
+        format: int32
+        example: 4
+      scheduleInfoDashboard:
+        type: integer
+        format: int32
+        example: 5
+      signInfoDashboard:
+        type: integer
+        format: int32
+        example: 1
+      storageInfoDashboard:
+        type: integer
+        format: int32
+        example: 8
+      userInfoDashboard:
+        type: integer
+        format: int32
+        example: 7
+  DeviceDownloadServerResource:
+    type: object
+    properties:
+      ftpPort:
+        type: string
+      hostName:
+        type: string
+      ipAddress:
+        type: string
+      selected:
+        type: boolean
+  Property:
+    type: object
+    properties:
+      description:
+        type: string
+      example:
+        type: object
+      format:
+        type: string
+      position:
+        type: integer
+        format: int32
+      readOnly:
+        type: boolean
+      title:
+        type: string
+      type:
+        type: string
+      vendorExtensions:
+        type: object
+      xml:
+        $ref: '#/definitions/Xml'
+  DeviceFilter:
+    type: object
+    properties:
+      agentId:
+        type: string
+      asState:
+        type: string
+      cmd:
+        type: string
+      commonSearchKeyword:
+        type: string
+      consoleId:
+        type: string
+      customInputVal:
+        type: string
+      deviceId:
+        type: string
+      deviceModelName:
+        type: string
+      deviceType:
+        type: string
+        description: device type for filter
+        enum:
+          - iPLAYER
+          - SPLAYER
+          - MPLAYER
+          - LPLAYER
+          - 3rdPartyPLAYER
+          - SIGNAGE
+          - SIG_CHILD
+          - APLAYER
+      deviceTypeArr:
+        type: array
+        items:
+          type: string
+      expirationDate:
+        type: string
+      filterGroupIds:
+        type: string
+      groupId:
+        type: string
+      groupMode:
+        type: string
+      groupName:
+        type: string
+      hasAlarmFilter:
+        type: array
+        items:
+          type: string
+      hasFunctionFilter:
+        type: array
+        items:
+          type: string
+      imageViewMode:
+        type: string
+      isApproved:
+        type: string
+      isRoot:
+        type: boolean
+      locale:
+        type: string
+      menu:
+        type: string
+      orderDir:
+        type: string
+      orgId:
+        type: integer
+        format: int64
+      pageSize:
+        type: integer
+        format: int32
+      roleName:
+        type: string
+      sortName:
+        type: string
+      srcName:
+        type: string
+      startIndex:
+        type: integer
+        format: int32
+      statusViewMode:
+        type: string
+      status_view_mode:
+        type: string
+      tagFilter:
+        type: string
+      tagFilterList:
+        type: array
+        items:
+          type: integer
+          format: int64
+      tagMode:
+        type: string
+      userId:
+        type: string
+      vwlGroup:
+        type: string
+    description: Deviec List Filter Model
+  ContentScheduleItemResource:
+    type: object
+    properties:
+      channelNo:
+        type: integer
+        format: int32
+        example: 1
+      cifsSlideTime:
+        type: string
+        example: '5'
+      contentId:
+        type: string
+        example: 00000000-0000-0000-0000-000000000000
+      contentName:
+        type: string
+        example: Newschedule
+      contentType:
+        type: string
+        example: IMAGE
+      duration:
+        type: string
+        example: '8999'
+      frameId:
+        type: string
+        example: 00000000-0000-0000-0000-000000000000
+      frameIndex:
+        type: string
+        example: '0'
+      inputSource:
+        type: string
+      isSync:
+        type: string
+        example: 'false'
+      monthday:
+        type: string
+      playerMode:
+        type: string
+        example: single
+      priority:
+        type: integer
+        format: int32
+      repeatType:
+        type: string
+        example: once
+      safetyLock:
+        type: string
+      scheduleType:
+        type: string
+        example: LFD
+      startDate:
+        type: string
+        example: '2016-09-05'
+      startTime:
+        type: string
+        example: '06:30:00'
+      stopDate:
+        type: string
+        example: '2016-09-05'
+      weekdays:
+        type: string
+  EnvironmentNoticeFilter:
+    type: object
+    properties:
+      important:
+        type: boolean
+        example: false
+      noticeEndDate:
+        type: string
+        example: '2016-09-01'
+      noticeId:
+        type: string
+        example: '1'
+      noticeStartDate:
+        type: string
+        example: '2016-09-01'
+      noticeSubject:
+        type: string
+        example: testSubject
+      noticeTitle:
+        type: string
+        example: testTitle
+  DeviceApproveResource:
+    type: object
+    required:
+      - calDate
+      - deviceId
+      - deviceName
+      - deviceType
+      - groupId
+      - hasChild
+    properties:
+      calDate:
+        type: string
+        example: ∞
+      childCnt:
+        type: string
+      deviceId:
+        type: string
+        example: 00-00-00-00-00-00
+      deviceName:
+        type: string
+        example: testDevice
+      deviceType:
+        type: string
+        example: SPLAYER
+      groupId:
+        type: string
+        example: '2'
+      hasChild:
+        type: string
+        example: 'false'
+      ipAddress:
+        type: string
+      location:
+        type: string
+      organization:
+        type: string
+      slaveNumber:
+        type: string
+  UserFilter:
+    type: object
+    required:
+      - confirmPassword
+      - email
+      - password
+      - userId
+      - userName
+    properties:
+      confirmPassword:
+        type: string
+        example: test1010
+      email:
+        type: string
+        example: test@samsung.com
+        description: '[optional] updateMyInfo'
+      groupName:
+        type: string
+        example: default
+        description: '[doNotUse] createUserSignUp, updateMyInfo'
+      organization:
+        type: string
+        example: SAMSUNG
+        description: '[doNotUse] updateMyInfo'
+      password:
+        type: string
+        example: test1010
+      role:
+        type: string
+        example: Administrator
+        description: '[doNotUse] createUserSignUp, updateMyInfo'
+      userId:
+        type: string
+        example: testId
+        description: '[doNotUse] updateMyInfo'
+      userName:
+        type: string
+        example: testUser
+  DeviceLedCabinetResource:
+    type: object
+    properties:
+      abl:
+        type: integer
+        format: int64
+      aspectRatio:
+        type: string
+      autoSource:
+        type: integer
+        format: int64
+      backlight:
+        type: integer
+        format: int64
+      cabinetGroupId:
+        type: integer
+        format: int64
+      cabinetId:
+        type: integer
+        format: int64
+      childAlarmTemperature:
+        type: integer
+        format: int64
+      childIdList:
+        type: array
+        items:
+          type: string
+      currentTemperature:
+        type: integer
+        format: int64
+      edgeCorrection:
+        type: integer
+        format: int64
+      fault:
+        type: string
+      fpgaVersion:
+        type: string
+      fwVersion:
+        type: string
+      gamut:
+        type: integer
+        format: int64
+      hdbt:
+        type: string
+      ic:
+        type: string
+      inputSource:
+        type: integer
+        format: int64
+      lastScannedTime:
+        type: string
+        format: date-time
+      luminance:
+        type: integer
+        format: int64
+      moduleRgbCc:
+        type: integer
+        format: int64
+      modules:
+        type: string
+      openDetection:
+        type: string
+      parentDeviceId:
+        type: string
+      phySize:
+        type: string
+      pitch:
+        type: string
+      pixelRgbCc:
+        type: integer
+        format: int64
+      power:
+        type: string
+      resolution:
+        type: string
+      voltageStatus:
+        type: string
+  DeviceDisplayCustomLogoResource:
+    type: object
+    properties:
+      changed:
+        type: boolean
+      displayTime:
+        type: string
+      fileType:
+        type: string
+      type:
+        type: string
+  PlaylistItemResource:
+    type: object
+    required:
+      - contentId
+    properties:
+      contentDuration:
+        type: integer
+        format: int64
+        example: 1
+      contentDurationMilli:
+        type: string
+      contentId:
+        type: string
+        example: 00000000-0000-0000-0000-000000000000
+      contentName:
+        type: string
+        example: Content
+      contentOrder:
+        type: integer
+        format: int64
+        example: 1
+      expiredDate:
+        type: string
+        example: '2016-01-01 00:00:00'
+      hasDefaultPlayTime:
+        type: boolean
+      mediaType:
+        type: string
+        example: IMAGE
+      playTime:
+        type: string
+        example: '0'
+      playlistId:
+        type: string
+        example: 00000000-0000-0000-0000-000000000000
+      resolution:
+        type: string
+      startDate:
+        type: string
+        example: '2016-01-01 00:00:00'
+      subPlaylist:
+        type: boolean
+      tagList:
+        type: string
+      tagMatchType:
+        type: string
+      tagValue:
+        type: string
+      thumbFileId:
+        type: string
+        example: 00000000-0000-0000-0000-000000000000
+      thumbFileName:
+        type: string
+      thumbFilePath:
+        type: string
+      versionId:
+        type: integer
+        format: int64
+        example: 1
+  ContentFilter:
+    type: object
+    properties:
+      category:
+        type: string
+        example: '0'
+      deviceType:
+        type: string
+        example: iPLAYER
+      deviceTypeVersion:
+        type: string
+        example: '3.0'
+      groupId:
+        type: string
+        example: '0'
+      groupType:
+        type: string
+        example: ALL
+      mediaType:
+        type: string
+        example: IMAGE
+      mediaTypeFilter:
+        type: string
+        example: IMAGE
+      pageSize:
+        type: integer
+        format: int32
+        example: 10
+      searchText:
+        type: string
+        example: test
+      selectId:
+        type: string
+        example: 32FA85B4-2389-476C-845A-0FC6F1D10D81
+      sortColumn:
+        type: string
+        example: last_modified_date
+      sortOrder:
+        type: string
+        example: desc
+      startIndex:
+        type: integer
+        format: int32
+        example: 1
+      tag:
+        type: string
+      userId:
+        type: string
+        example: admin
+  ResponseBody:
+    type: object
+    properties:
+      apiVersion:
+        type: string
+      errorCode:
+        type: string
+      errorMessage:
+        type: string
+      items:
+        type: object
+      pageSize:
+        type: integer
+        format: int32
+      startIndex:
+        type: integer
+        format: int32
+      status:
+        type: string
+      totalCount:
+        type: integer
+        format: int32
+  DeviceTimeTimerConf:
+    type: object
+    properties:
+      timerDataCount:
+        type: integer
+        format: int32
+      timerHolidayEnable:
+        type: string
+      timerManualWeekday:
+        type: string
+      timerOffAmpm:
+        type: string
+      timerOffH:
+        type: string
+      timerOffM:
+        type: string
+      timerOffManualWeekday:
+        type: string
+      timerOffRepeat:
+        type: string
+      timerOffStatus:
+        type: string
+      timerOnAmpm:
+        type: string
+      timerOnH:
+        type: string
+      timerOnM:
+        type: string
+      timerOnStatus:
+        type: string
+      timerRepeat:
+        type: string
+      timerSeq:
+        type: integer
+        format: int32
+      timerSource:
+        type: string
+      timerVolume:
+        type: string
+  Response:
+    type: object
+    properties:
+      description:
+        type: string
+      examples:
+        type: object
+      headers:
+        type: object
+        additionalProperties:
+          $ref: '#/definitions/Property'
+      schema:
+        $ref: '#/definitions/Property'
+  Error:
+    type: object
+    properties:
+      description:
+        type: string
+      examples:
+        type: object
+      headers:
+        type: object
+        additionalProperties:
+          $ref: '#/definitions/Property'
+      schema:
+        $ref: '#/definitions/Property'
+  DeviceTimeHolidayResource:
+    type: object
+    properties:
+      command:
+        type: string
+      day1:
+        type: string
+      day2:
+        type: string
+      deviceId:
+        type: string
+      holidaySeq:
+        type: integer
+        format: int32
+      month1:
+        type: string
+      month2:
+        type: string
+  MessageScheduleResource:
+    type: object
+    required:
+      - creatorId
+      - deviceType
+      - deviceTypeVersion
+      - messageGroupId
+      - messageGroupName
+      - messageName
+    properties:
+      creatorId:
+        type: string
+        example: admin
+      deviceGroupIds:
+        type: string
+      deviceGroupNames:
+        type: string
+      deviceType:
+        type: string
+        example: SPLAYER
+      deviceTypeVersion:
+        type: string
+        example: '2.0'
+      isInstant:
+        type: string
+        example: 'Y'
+      messageGroupId:
+        type: string
+        example: '1'
+      messageGroupName:
+        type: string
+        example: default
+      messageId:
+        type: string
+        example: 32FA85B4-2389-476C-845A-0FC6F1D10D81
+      messageList:
+        type: array
+        items:
+          $ref: '#/definitions/MessageResource'
+      messageName:
+        type: string
+        example: new
+      messageStatus:
+        type: string
+      modifiedDate:
+        type: string
+        example: '2016-01-01 00:00:00'
+  Xml:
+    type: object
+    properties:
+      attribute:
+        type: boolean
+      name:
+        type: string
+      namespace:
+        type: string
+      prefix:
+        type: string
+      wrapped:
+        type: boolean
+  DeviceDisplayConfResource:
+    type: object
+    properties:
+      advancedAutoPower:
+        type: integer
+        format: int64
+        example: 0
+      advancedFanControl:
+        type: integer
+        format: int64
+        example: 0
+      advancedFanSpeed:
+        type: integer
+        format: int64
+        example: 40
+      advancedOsdDisplayType:
+        example: 1;1;1;1
+        $ref: '#/definitions/DeviceDisplayConfSubResource'
+      advancedReset:
+        type: integer
+        format: int64
+        example: 0
+      advancedRj45SettingRefresh:
+        type: integer
+        format: int64
+        example: 0
+      advancedStandBy:
+        type: integer
+        format: int64
+        example: 2
+      advancedUserAutoColor:
+        type: integer
+        format: int64
+        example: 0
+      autoSourceSwitching:
+        example: 1;1;20;30
+        $ref: '#/definitions/DeviceDisplayConfSubResource'
+      basicDirectChannel:
+        type: string
+        example: 2;1;0;65535;0
+        description: '1;chkAtvDtv(0:false, 1:true);chkAirCable(0:false, 1:true);tv_channel_major_channel;tv_channel_minor_channel[Channel] button on display list tab. (Modification is only allowed with TV or DTV inpusource'
+      basicMute:
+        type: integer
+        format: int64
+        example: 0
+        description: '0 : mute off'
+      basicPanelStatus:
+        type: integer
+        format: int64
+        example: 0
+        description: '0 : panel off'
+      basicPower:
+        type: string
+        example: '0'
+        description: '0 : power off'
+      basicSource:
+        type: integer
+        format: int64
+        example: 96
+        description: MagicInfo-Lite/S
+      basicVolume:
+        type: integer
+        format: int64
+        example: 0
+        description: volume value
+      blackTone:
+        type: integer
+        format: int64
+      brightnessLimit:
+        type: integer
+        format: int64
+      chkSchChannel:
+        type: integer
+        format: int64
+        example: 'null'
+      customLogo:
+        $ref: '#/definitions/DeviceDisplayCustomLogoResource'
+      diagnosisAlarmTemperature:
+        type: integer
+        format: int64
+        example: 77
+      diagnosisDisplayStatus:
+        type: string
+        example: 'null'
+      diagnosisMonitorTemperature:
+        type: integer
+        format: int64
+        example: 31
+      diagnosisPanelOnTime:
+        type: string
+        example: 16;68
+      fleshTone:
+        type: integer
+        format: int64
+      imageAuto:
+        type: integer
+        format: int64
+      imageCoarse:
+        type: integer
+        format: int64
+      imageFine:
+        type: integer
+        format: int64
+      imageHpos:
+        type: integer
+        format: int64
+      imageVpos:
+        type: integer
+        format: int64
+      inputSourceList:
+        type: array
+        items:
+          $ref: '#/definitions/HashMap«string,object»'
+      maxPowerSaving:
+        type: integer
+        format: int64
+      mdcUpdateTime:
+        $ref: '#/definitions/Timestamp'
+      miscAllLock:
+        type: integer
+        format: int64
+        example: 0
+      miscOsd:
+        type: integer
+        format: int64
+        example: 1
+      miscPanelLock:
+        type: integer
+        format: int64
+        example: 0
+      miscRemocon:
+        type: integer
+        format: int64
+        example: 1
+      mntAuto:
+        example: 12;0;1;100;12;0;1;255
+        $ref: '#/definitions/DeviceDisplayConfSubResource'
+      mntFormat:
+        type: integer
+        format: int64
+        example: 'null'
+      mntManual:
+        type: integer
+        format: int64
+        example: 70
+        description: 0~100
+      mntPixelShift:
+        example: 0;4;4;4
+        $ref: '#/definitions/DeviceDisplayConfSubResource'
+      mntSafetyLock:
+        type: integer
+        format: int64
+        example: 0
+      mntSafetyScreenRun:
+        type: integer
+        format: int64
+        example: 0
+      mntSafetyScreenTimer:
+        example: 0;0;0
+        $ref: '#/definitions/DeviceDisplayConfSubResource'
+      mntVideoWall:
+        type: integer
+        format: int64
+        example: 'null'
+      networkStandbyMode:
+        type: string
+        example: 'N'
+        description: 'N: not supported, 0: off, 1: on'
+      pcMode:
+        type: boolean
+      pipControl:
+        type: integer
+        format: int64
+      pipPosition:
+        type: integer
+        format: int64
+      pipSize:
+        type: integer
+        format: int64
+      pipSource:
+        type: integer
+        format: int64
+      pipSwap:
+        type: integer
+        format: int64
+      ppcBlue:
+        type: integer
+        format: int64
+        example: 0
+      ppcBrightness:
+        type: integer
+        format: int64
+        example: 20
+        description: 0~100
+      ppcColorTemperature:
+        type: integer
+        format: int64
+        example: 160
+        description: 'if ppc_colortone not null - 253:254:35:255:45:0:55:1:65:2:75:3:85:4:95:5:105:6:115:7:125:8:135:9:145:16:155:160 - 2,800K:3,000K:3,500K:4,000K:4,500K:5,000K:5,500K:6,000K:6,500K:7,000K:7,500K:8,000K:8,500K:9,000K:9,500K:10,000K:10,500K:11,000K:11,500K:12,000K:12,500K:13,000K:13,500K:14,000K:14,500K:15,000K:15,500K:16,000K'
+      ppcColortone:
+        type: integer
+        format: int64
+        example: 0
+        description: 'if ppc_colortone not null - 1: cool1, 0: cool2, 2: normal, 3: warm1, 4: warm2, 80: off'
+      ppcContrast:
+        type: integer
+        format: int64
+        example: 99
+        description: 0~100
+      ppcGamma:
+        type: integer
+        format: int64
+        example: 0
+        description: '0: natural, 1: gammaMode1, 2: gammaMode2, 3: gammaMode3, 4: gammaMode4, 5: gammaMode5, 17: -1, 18: -2, 19: -3, 20: -4, 21: -5, 32: custom'
+      ppcGreen:
+        type: integer
+        format: int64
+        example: 0
+      ppcHdmiBlackLevel:
+        type: integer
+        format: int64
+        example: 0
+        description: 'if Pv_hdmi_black_level value is null - 0: low, 1: normalelse 1: normal, 0: low'
+      ppcMagicBright:
+        type: integer
+        format: int64
+        example: 35
+        description: '16: entertainment, 17: internet, 18: text, 19: custom, 20: advertisement, 21: information, 22: calibration, 32: shopAndMall_video, 33: shopAndMall_text, 34: officeAndSchool_video, 35: officeAndSchool_text, 36: terminalAndStation_video, 37: terminalAndStation_text, 38: videowall_video, 39: videowall_text'
+      ppcRed:
+        type: integer
+        format: int64
+        example: 0
+      ppcSize:
+        type: integer
+        format: int64
+        example: 0
+        description: '16: 16:9, 24: 4:3, 32: psize_original_ratio'
+      pvBrightness:
+        type: integer
+        format: int64
+        example: 20
+        description: 1~100
+      pvColor:
+        type: integer
+        format: int64
+        example: 55
+        description: 1~100
+      pvColorTemperature:
+        type: integer
+        format: int64
+      pvColortone:
+        type: integer
+        format: int64
+        example: 80
+        description: '80:off, 1: cool, 2:normal'
+      pvContrast:
+        type: integer
+        format: int64
+        example: 99
+        description: 1~100
+      pvDigitalnr:
+        type: integer
+        format: int64
+        example: 2
+        description: '1: on, 0: off, 2: mdc_medium, 3: mdc_high, 4: autho, 5: mdc_auto_visual'
+      pvFilmmode:
+        type: integer
+        format: int64
+        example: 0
+        description: '1: on, 0: off, 2: auto2, 3: mdc_cinema_smooth'
+      pvHdmiBlackLevel:
+        type: integer
+        format: int64
+        description: 'if pv_hdmi_black_level value is null : not supported - 0: low, 1: normalelse 0: normal, 1: low, 2: auto'
+      pvMode:
+        type: integer
+        format: int64
+        example: 32
+        description: '0: dynamic, 1: mdc_pv_standard, 2: mdc_pv_movie, 3: custom, 4: mdc_pv_natural, 5: calibration, 32: shopAndMall_video, 33: shopAndMall_text, 34: officeAndSchool_video, 35: officeAndSchool_text, 36:terminalAndStation_video, 37: terminalAndStation_text, 38: videowall_video, 39: videowall_text'
+      pvMpegNoiseFilter:
+        type: integer
+        format: int64
+      pvSharpness:
+        type: integer
+        format: int64
+        example: 59
+        description: 1~100
+      pvSize:
+        type: integer
+        format: int64
+        example: 1
+        description: '1: 16:9, 4: zoom, 5: zoom1, 6: zoom2, 9: screen_fit_just_scan1, 11: 4:3,12: wide_fit, 49: wide_zoom, 13: custom, 14: mdc_smart_view1, 15: mdc_smart_view2, 32: psize_original_ratio'
+      pvTint:
+        type: integer
+        format: int64
+        example: 50
+        description: 1~100
+      pvVideoPicturePositionSize:
+        type: string
+      rgbOnlyMode:
+        type: integer
+        format: int64
+      sbBgain:
+        type: integer
+        format: int64
+        example: 0
+        description: 0~255
+      sbBoffset:
+        type: integer
+        format: int64
+        example: 0
+        description: 0~255
+      sbGain:
+        type: integer
+        format: int64
+        example: 0
+        description: 0~255
+      sbGgain:
+        type: integer
+        format: int64
+        example: 0
+        description: 0~255
+      sbGoffset:
+        type: integer
+        format: int64
+        example: 0
+        description: 0~255
+      sbRgain:
+        type: integer
+        format: int64
+        example: 0
+        description: 0~255
+      sbRoffset:
+        type: integer
+        format: int64
+        example: 0
+        description: 0~255
+      sbSharp:
+        type: integer
+        format: int64
+        example: 0
+        description: 0~255
+      sbStatus:
+        type: integer
+        format: int64
+        example: 0
+      screenFreeze:
+        type: integer
+        format: int64
+      screenMute:
+        type: integer
+        format: int64
+      soundBalance:
+        type: integer
+        format: int64
+        example: 0
+      soundBass:
+        type: integer
+        format: int64
+        example: 0
+      soundEffect:
+        type: integer
+        format: int64
+        example: 0
+      soundMode:
+        type: integer
+        format: int64
+        example: 0
+        description: '0: mdc_sound_standard, 1: mdc_sound_music, 2: mdc_sound_movie, 3: mdc_sound_speech, 4: custom, 5: amplify'
+      soundSrs:
+        type: integer
+        format: int64
+        example: 0
+        description: '0: off, 1: on'
+      soundTreble:
+        type: integer
+        format: int64
+        example: 0
+      touchControlLock:
+        type: integer
+        format: int64
+      webBrowserUrl:
+        $ref: '#/definitions/DeviceDisplayConfSubResource'
+      webcam:
+        type: boolean
+        example: false
+  MessageResource:
+    type: object
+    required:
+      - bgImage
+      - bold
+      - color
+      - font
+      - italic
+      - messageText
+      - position
+      - size
+      - underline
+      - userId
+    properties:
+      bgColor:
+        type: string
+        example: '#111111'
+      bgImage:
+        type: string
+        example: '0'
+      bold:
+        type: string
+        example: 'N'
+      color:
+        type: string
+        example: '#000000'
+      createDate:
+        $ref: '#/definitions/Timestamp'
+      direction:
+        type: string
+        example: none
+      duration:
+        type: integer
+        format: int64
+      endDate:
+        type: string
+        example: '2999-01-01'
+      font:
+        type: string
+        example: Arial
+      isDeleted:
+        type: string
+        example: 'N'
+      italic:
+        type: string
+        example: 'N'
+      messageText:
+        type: string
+        example: messageText1
+      modifiedDate:
+        type: string
+      monthdays:
+        type: string
+      position:
+        type: string
+        example: middle
+      repeatType:
+        type: string
+        example: once
+      size:
+        type: string
+        example: '4'
+      speed:
+        type: string
+        example: normal
+      startDate:
+        type: string
+        example: '2016-01-01'
+      startTime:
+        type: string
+        example: '00:00:00'
+      underline:
+        type: string
+        example: 'N'
+      userId:
+        type: string
+        example: admin
+      weekdays:
+        type: string
+  PlaylistFilter:
+    type: object
+    properties:
+      category:
+        type: string
+        example: '0'
+      creatorId:
+        type: string
+        example: admin
+      deviceType:
+        type: string
+        example: SPLAYER
+      groupId:
+        type: string
+        example: '0'
+      listType:
+        type: string
+        example: ALL
+      pageSize:
+        type: integer
+        format: int32
+        example: 10
+      playlistType:
+        type: string
+        example: '0'
+      searchText:
+        type: string
+        example: test
+      sortColumn:
+        type: string
+        example: last_modified_date
+      sortOrder:
+        type: string
+        example: desc
+      startIndex:
+        type: integer
+        format: int32
+        example: 1
+      userId:
+        type: string
+        example: admin
+  ContentScheduleResource:
+    type: object
+    required:
+      - deviceType
+      - deviceTypeVersion
+      - scheduleGroupId
+    properties:
+      backgroundMusic:
+        type: string
+      contentMute:
+        type: string
+      contentSyncOn:
+        type: string
+        example: '0'
+      deployReserve:
+        type: string
+        example: 'false'
+      deployReserveResource:
+        type: object
+      description:
+        type: string
+      deviceGroupIds:
+        type: string
+      deviceType:
+        type: string
+        example: SPLAYER
+      deviceTypeVersion:
+        type: number
+        format: float
+        example: 2
+      ipAddress:
+        type: string
+      itemList:
+        type: array
+        items:
+          $ref: '#/definitions/ContentScheduleItemResource'
+      scheduleGroupId:
+        type: string
+        example: '2'
+      scheduleName:
+        type: string
+        example: Name
+      syncPlay:
+        type: boolean
+        example: false
+      vwlType:
+        type: boolean
+        example: false
+  ScheduleFilter:
+    type: object
+    properties:
+      deviceType:
+        type: string
+        example: SPLAYER
+      endModifiedDate:
+        type: string
+      frameCount:
+        type: string
+        example: '1'
+      groupId:
+        type: string
+        example: '0'
+      groupName:
+        type: string
+        example: test
+      groupType:
+        type: string
+        example: ALL
+      isSelect:
+        type: string
+      orderNumber:
+        type: integer
+        format: int32
+      pageSize:
+        type: integer
+        format: int32
+      productType:
+        type: string
+        example: PREMIUM
+      results:
+        type: integer
+        format: int32
+      scheduleType:
+        type: string
+        example: LFD
+      searchContentIds:
+        type: string
+      searchDevGroupIds:
+        type: string
+      searchId:
+        type: string
+        example: '-1'
+      searchText:
+        type: string
+        example: test
+      selectId:
+        type: string
+      sortColumn:
+        type: string
+        example: modify_date
+      sortOrder:
+        type: string
+        example: desc
+      startIndex:
+        type: integer
+        format: int32
+      startModifiedDate:
+        type: string
+  'HashMap«string,object»':
+    type: object
+    additionalProperties:
+      type: object
+  Map:
+    type: object
+    additionalProperties:
+      type: object
+  AuthResource: 
+    required:
+      - username
+      - password
+    properties: 
+      username: 
+        example: "vllanten"
+        type: string
+      password: 
+        example: "pass12345word"
+        type: string
+    type: object
+  TokenAuth: 
+    properties: 
+      token: 
+        example: "eyJhbGciO......WrK9hxUg"
+        type: string
+    type: object
