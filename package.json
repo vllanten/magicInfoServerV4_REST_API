@@ -1,0 +1,21 @@
+{
+  "name": "magic_info_server_v41___rest_api",
+  "version": "1.0.0",
+  "description": "MagicInfo_Server_V4_1___REST_API",
+  "license": "Unlicense",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --recursive"
+  },
+  "browser": {
+    "fs": false
+  },
+  "dependencies": {
+    "superagent": "3.5.2"
+  },
+  "devDependencies": {
+    "mocha": "~2.3.4",
+    "sinon": "1.17.3",
+    "expect.js": "~0.3.1"
+  }
+}
