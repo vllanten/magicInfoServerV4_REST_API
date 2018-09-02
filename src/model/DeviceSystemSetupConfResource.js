@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4x REST API
- * MagicInfo Server V4x REST API
+ * MagicInfo Server V4 REST API
+ * MagicInfo Server V4 REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./DeviceDownloadServerResource'), require('./HashMapstringobject'), require('./Map'));
   } else {
     // Browser globals (root is window)
-    if (!root.MagicInfoServerV4xRestApi) {
-      root.MagicInfoServerV4xRestApi = {};
+    if (!root.MagicInfoServerV4RestApi) {
+      root.MagicInfoServerV4RestApi = {};
     }
-    root.MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource = factory(root.MagicInfoServerV4xRestApi.ApiClient, root.MagicInfoServerV4xRestApi.DeviceDownloadServerResource, root.MagicInfoServerV4xRestApi.HashMapstringobject, root.MagicInfoServerV4xRestApi.Map);
+    root.MagicInfoServerV4RestApi.DeviceSystemSetupConfResource = factory(root.MagicInfoServerV4RestApi.ApiClient, root.MagicInfoServerV4RestApi.DeviceDownloadServerResource, root.MagicInfoServerV4RestApi.HashMapstringobject, root.MagicInfoServerV4RestApi.Map);
   }
 }(this, function(ApiClient, DeviceDownloadServerResource, HashMapstringobject, Map) {
   'use strict';

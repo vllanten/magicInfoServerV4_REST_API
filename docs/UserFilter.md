@@ -1,4 +1,4 @@
-# MagicInfoServerV4xRestApi.UserFilter
+# MagicInfoServerV4RestApi.UserFilter
 
 ## Properties
 Name | Type | Description | Notes

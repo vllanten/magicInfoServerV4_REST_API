@@ -1,4 +1,4 @@
-# MagicInfoServerV4xRestApi.ContentApproveResource
+# MagicInfoServerV4RestApi.ContentApproveResource
 
 ## Properties
 Name | Type | Description | Notes

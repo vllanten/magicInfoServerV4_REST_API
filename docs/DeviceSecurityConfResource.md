@@ -1,4 +1,4 @@
-# MagicInfoServerV4xRestApi.DeviceSecurityConfResource
+# MagicInfoServerV4RestApi.DeviceSecurityConfResource
 
 ## Properties
 Name | Type | Description | Notes

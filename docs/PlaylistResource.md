@@ -1,4 +1,4 @@
-# MagicInfoServerV4xRestApi.PlaylistResource
+# MagicInfoServerV4RestApi.PlaylistResource
 
 ## Properties
 Name | Type | Description | Notes

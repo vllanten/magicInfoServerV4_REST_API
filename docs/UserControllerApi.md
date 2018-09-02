@@ -1,4 +1,4 @@
-# MagicInfoServerV4xRestApi.UserControllerApi
+# MagicInfoServerV4RestApi.UserControllerApi
 
 All URIs are relative to *http://127.0.0.2:7001/MagicInfo*
 
@@ -20,8 +20,8 @@ createUserSignUp
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -29,9 +29,9 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.UserControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.UserControllerApi();
 
-var filter = new MagicInfoServerV4xRestApi.UserFilter(); // UserFilter | filter
+var filter = new MagicInfoServerV4RestApi.UserFilter(); // UserFilter | filter
 
 
 var callback = function(error, data, response) {
@@ -71,8 +71,8 @@ createUser
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -80,9 +80,9 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.UserControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.UserControllerApi();
 
-var filter = new MagicInfoServerV4xRestApi.UserFilter(); // UserFilter | filter
+var filter = new MagicInfoServerV4RestApi.UserFilter(); // UserFilter | filter
 
 
 var callback = function(error, data, response) {
@@ -122,8 +122,8 @@ listDashboardUserInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -131,7 +131,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.UserControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.UserControllerApi();
 
 var callback = function(error, data, response) {
   if (error) {
@@ -169,8 +169,8 @@ Fetch the admin user details
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -178,7 +178,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.UserControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.UserControllerApi();
 
 var callback = function(error, data, response) {
   if (error) {
@@ -214,8 +214,8 @@ listUserOrgan
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -223,7 +223,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.UserControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.UserControllerApi();
 
 var callback = function(error, data, response) {
   if (error) {
@@ -259,8 +259,8 @@ updateMyInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -268,9 +268,9 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.UserControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.UserControllerApi();
 
-var filter = new MagicInfoServerV4xRestApi.UserFilter(); // UserFilter | filter
+var filter = new MagicInfoServerV4RestApi.UserFilter(); // UserFilter | filter
 
 
 var callback = function(error, data, response) {

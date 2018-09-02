@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4x REST API
- * MagicInfo Server V4x REST API
+ * MagicInfo Server V4 REST API
+ * MagicInfo Server V4 REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV4xRestApi);
+    factory(root.expect, root.MagicInfoServerV4RestApi);
   }
-}(this, function(expect, MagicInfoServerV4xRestApi) {
+}(this, function(expect, MagicInfoServerV4RestApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV4xRestApi.MessageScheduleResource();
+    instance = new MagicInfoServerV4RestApi.MessageScheduleResource();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,85 +52,85 @@
   describe('MessageScheduleResource', function() {
     it('should create an instance of MessageScheduleResource', function() {
       // uncomment below and update the code to test MessageScheduleResource
-      //var instane = new MagicInfoServerV4xRestApi.MessageScheduleResource();
-      //expect(instance).to.be.a(MagicInfoServerV4xRestApi.MessageScheduleResource);
+      //var instane = new MagicInfoServerV4RestApi.MessageScheduleResource();
+      //expect(instance).to.be.a(MagicInfoServerV4RestApi.MessageScheduleResource);
     });
 
     it('should have the property creatorId (base name: "creatorId")', function() {
       // uncomment below and update the code to test the property creatorId
-      //var instane = new MagicInfoServerV4xRestApi.MessageScheduleResource();
+      //var instane = new MagicInfoServerV4RestApi.MessageScheduleResource();
       //expect(instance).to.be();
     });
 
     it('should have the property deviceGroupIds (base name: "deviceGroupIds")', function() {
       // uncomment below and update the code to test the property deviceGroupIds
-      //var instane = new MagicInfoServerV4xRestApi.MessageScheduleResource();
+      //var instane = new MagicInfoServerV4RestApi.MessageScheduleResource();
       //expect(instance).to.be();
     });
 
     it('should have the property deviceGroupNames (base name: "deviceGroupNames")', function() {
       // uncomment below and update the code to test the property deviceGroupNames
-      //var instane = new MagicInfoServerV4xRestApi.MessageScheduleResource();
+      //var instane = new MagicInfoServerV4RestApi.MessageScheduleResource();
       //expect(instance).to.be();
     });
 
     it('should have the property deviceType (base name: "deviceType")', function() {
       // uncomment below and update the code to test the property deviceType
-      //var instane = new MagicInfoServerV4xRestApi.MessageScheduleResource();
+      //var instane = new MagicInfoServerV4RestApi.MessageScheduleResource();
       //expect(instance).to.be();
     });
 
     it('should have the property deviceTypeVersion (base name: "deviceTypeVersion")', function() {
       // uncomment below and update the code to test the property deviceTypeVersion
-      //var instane = new MagicInfoServerV4xRestApi.MessageScheduleResource();
+      //var instane = new MagicInfoServerV4RestApi.MessageScheduleResource();
       //expect(instance).to.be();
     });
 
     it('should have the property isInstant (base name: "isInstant")', function() {
       // uncomment below and update the code to test the property isInstant
-      //var instane = new MagicInfoServerV4xRestApi.MessageScheduleResource();
+      //var instane = new MagicInfoServerV4RestApi.MessageScheduleResource();
       //expect(instance).to.be();
     });
 
     it('should have the property messageGroupId (base name: "messageGroupId")', function() {
       // uncomment below and update the code to test the property messageGroupId
-      //var instane = new MagicInfoServerV4xRestApi.MessageScheduleResource();
+      //var instane = new MagicInfoServerV4RestApi.MessageScheduleResource();
       //expect(instance).to.be();
     });
 
     it('should have the property messageGroupName (base name: "messageGroupName")', function() {
       // uncomment below and update the code to test the property messageGroupName
-      //var instane = new MagicInfoServerV4xRestApi.MessageScheduleResource();
+      //var instane = new MagicInfoServerV4RestApi.MessageScheduleResource();
       //expect(instance).to.be();
     });
 
     it('should have the property messageId (base name: "messageId")', function() {
       // uncomment below and update the code to test the property messageId
-      //var instane = new MagicInfoServerV4xRestApi.MessageScheduleResource();
+      //var instane = new MagicInfoServerV4RestApi.MessageScheduleResource();
       //expect(instance).to.be();
     });
 
     it('should have the property messageList (base name: "messageList")', function() {
       // uncomment below and update the code to test the property messageList
-      //var instane = new MagicInfoServerV4xRestApi.MessageScheduleResource();
+      //var instane = new MagicInfoServerV4RestApi.MessageScheduleResource();
       //expect(instance).to.be();
     });
 
     it('should have the property messageName (base name: "messageName")', function() {
       // uncomment below and update the code to test the property messageName
-      //var instane = new MagicInfoServerV4xRestApi.MessageScheduleResource();
+      //var instane = new MagicInfoServerV4RestApi.MessageScheduleResource();
       //expect(instance).to.be();
     });
 
     it('should have the property messageStatus (base name: "messageStatus")', function() {
       // uncomment below and update the code to test the property messageStatus
-      //var instane = new MagicInfoServerV4xRestApi.MessageScheduleResource();
+      //var instane = new MagicInfoServerV4RestApi.MessageScheduleResource();
       //expect(instance).to.be();
     });
 
     it('should have the property modifiedDate (base name: "modifiedDate")', function() {
       // uncomment below and update the code to test the property modifiedDate
-      //var instane = new MagicInfoServerV4xRestApi.MessageScheduleResource();
+      //var instane = new MagicInfoServerV4RestApi.MessageScheduleResource();
       //expect(instance).to.be();
     });
 

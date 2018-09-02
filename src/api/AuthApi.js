@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4x REST API
- * MagicInfo Server V4x REST API
+ * MagicInfo Server V4 REST API
+ * MagicInfo Server V4 REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/AuthResource'), require('../model/Error'), require('../model/TokenAuth'));
   } else {
     // Browser globals (root is window)
-    if (!root.MagicInfoServerV4xRestApi) {
-      root.MagicInfoServerV4xRestApi = {};
+    if (!root.MagicInfoServerV4RestApi) {
+      root.MagicInfoServerV4RestApi = {};
     }
-    root.MagicInfoServerV4xRestApi.AuthApi = factory(root.MagicInfoServerV4xRestApi.ApiClient, root.MagicInfoServerV4xRestApi.AuthResource, root.MagicInfoServerV4xRestApi.Error, root.MagicInfoServerV4xRestApi.TokenAuth);
+    root.MagicInfoServerV4RestApi.AuthApi = factory(root.MagicInfoServerV4RestApi.ApiClient, root.MagicInfoServerV4RestApi.AuthResource, root.MagicInfoServerV4RestApi.Error, root.MagicInfoServerV4RestApi.TokenAuth);
   }
 }(this, function(ApiClient, AuthResource, Error, TokenAuth) {
   'use strict';

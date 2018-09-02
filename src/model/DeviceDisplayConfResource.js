@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4x REST API
- * MagicInfo Server V4x REST API
+ * MagicInfo Server V4 REST API
+ * MagicInfo Server V4 REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./DeviceDisplayConfSubResource'), require('./DeviceDisplayCustomLogoResource'), require('./HashMapstringobject'), require('./Timestamp'));
   } else {
     // Browser globals (root is window)
-    if (!root.MagicInfoServerV4xRestApi) {
-      root.MagicInfoServerV4xRestApi = {};
+    if (!root.MagicInfoServerV4RestApi) {
+      root.MagicInfoServerV4RestApi = {};
     }
-    root.MagicInfoServerV4xRestApi.DeviceDisplayConfResource = factory(root.MagicInfoServerV4xRestApi.ApiClient, root.MagicInfoServerV4xRestApi.DeviceDisplayConfSubResource, root.MagicInfoServerV4xRestApi.DeviceDisplayCustomLogoResource, root.MagicInfoServerV4xRestApi.HashMapstringobject, root.MagicInfoServerV4xRestApi.Timestamp);
+    root.MagicInfoServerV4RestApi.DeviceDisplayConfResource = factory(root.MagicInfoServerV4RestApi.ApiClient, root.MagicInfoServerV4RestApi.DeviceDisplayConfSubResource, root.MagicInfoServerV4RestApi.DeviceDisplayCustomLogoResource, root.MagicInfoServerV4RestApi.HashMapstringobject, root.MagicInfoServerV4RestApi.Timestamp);
   }
 }(this, function(ApiClient, DeviceDisplayConfSubResource, DeviceDisplayCustomLogoResource, HashMapstringobject, Timestamp) {
   'use strict';

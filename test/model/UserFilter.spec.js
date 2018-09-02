@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4x REST API
- * MagicInfo Server V4x REST API
+ * MagicInfo Server V4 REST API
+ * MagicInfo Server V4 REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV4xRestApi);
+    factory(root.expect, root.MagicInfoServerV4RestApi);
   }
-}(this, function(expect, MagicInfoServerV4xRestApi) {
+}(this, function(expect, MagicInfoServerV4RestApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV4xRestApi.UserFilter();
+    instance = new MagicInfoServerV4RestApi.UserFilter();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,55 +52,55 @@
   describe('UserFilter', function() {
     it('should create an instance of UserFilter', function() {
       // uncomment below and update the code to test UserFilter
-      //var instane = new MagicInfoServerV4xRestApi.UserFilter();
-      //expect(instance).to.be.a(MagicInfoServerV4xRestApi.UserFilter);
+      //var instane = new MagicInfoServerV4RestApi.UserFilter();
+      //expect(instance).to.be.a(MagicInfoServerV4RestApi.UserFilter);
     });
 
     it('should have the property confirmPassword (base name: "confirmPassword")', function() {
       // uncomment below and update the code to test the property confirmPassword
-      //var instane = new MagicInfoServerV4xRestApi.UserFilter();
+      //var instane = new MagicInfoServerV4RestApi.UserFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instane = new MagicInfoServerV4xRestApi.UserFilter();
+      //var instane = new MagicInfoServerV4RestApi.UserFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property groupName (base name: "groupName")', function() {
       // uncomment below and update the code to test the property groupName
-      //var instane = new MagicInfoServerV4xRestApi.UserFilter();
+      //var instane = new MagicInfoServerV4RestApi.UserFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property organization (base name: "organization")', function() {
       // uncomment below and update the code to test the property organization
-      //var instane = new MagicInfoServerV4xRestApi.UserFilter();
+      //var instane = new MagicInfoServerV4RestApi.UserFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property password (base name: "password")', function() {
       // uncomment below and update the code to test the property password
-      //var instane = new MagicInfoServerV4xRestApi.UserFilter();
+      //var instane = new MagicInfoServerV4RestApi.UserFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property role (base name: "role")', function() {
       // uncomment below and update the code to test the property role
-      //var instane = new MagicInfoServerV4xRestApi.UserFilter();
+      //var instane = new MagicInfoServerV4RestApi.UserFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "userId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instane = new MagicInfoServerV4xRestApi.UserFilter();
+      //var instane = new MagicInfoServerV4RestApi.UserFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property userName (base name: "userName")', function() {
       // uncomment below and update the code to test the property userName
-      //var instane = new MagicInfoServerV4xRestApi.UserFilter();
+      //var instane = new MagicInfoServerV4RestApi.UserFilter();
       //expect(instance).to.be();
     });
 

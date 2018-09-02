@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4x REST API
- * MagicInfo Server V4x REST API
+ * MagicInfo Server V4 REST API
+ * MagicInfo Server V4 REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV4xRestApi);
+    factory(root.expect, root.MagicInfoServerV4RestApi);
   }
-}(this, function(expect, MagicInfoServerV4xRestApi) {
+}(this, function(expect, MagicInfoServerV4RestApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV4xRestApi.Map();
+    instance = new MagicInfoServerV4RestApi.Map();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,8 +52,8 @@
   describe('Map', function() {
     it('should create an instance of Map', function() {
       // uncomment below and update the code to test Map
-      //var instane = new MagicInfoServerV4xRestApi.Map();
-      //expect(instance).to.be.a(MagicInfoServerV4xRestApi.Map);
+      //var instane = new MagicInfoServerV4RestApi.Map();
+      //expect(instance).to.be.a(MagicInfoServerV4RestApi.Map);
     });
 
   });

@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4x REST API
- * MagicInfo Server V4x REST API
+ * MagicInfo Server V4 REST API
+ * MagicInfo Server V4 REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV4xRestApi);
+    factory(root.expect, root.MagicInfoServerV4RestApi);
   }
-}(this, function(expect, MagicInfoServerV4xRestApi) {
+}(this, function(expect, MagicInfoServerV4RestApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV4xRestApi.ScheduleFilter();
+    instance = new MagicInfoServerV4RestApi.ScheduleFilter();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,133 +52,133 @@
   describe('ScheduleFilter', function() {
     it('should create an instance of ScheduleFilter', function() {
       // uncomment below and update the code to test ScheduleFilter
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
-      //expect(instance).to.be.a(MagicInfoServerV4xRestApi.ScheduleFilter);
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
+      //expect(instance).to.be.a(MagicInfoServerV4RestApi.ScheduleFilter);
     });
 
     it('should have the property deviceType (base name: "deviceType")', function() {
       // uncomment below and update the code to test the property deviceType
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property endModifiedDate (base name: "endModifiedDate")', function() {
       // uncomment below and update the code to test the property endModifiedDate
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property frameCount (base name: "frameCount")', function() {
       // uncomment below and update the code to test the property frameCount
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property groupId (base name: "groupId")', function() {
       // uncomment below and update the code to test the property groupId
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property groupName (base name: "groupName")', function() {
       // uncomment below and update the code to test the property groupName
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property groupType (base name: "groupType")', function() {
       // uncomment below and update the code to test the property groupType
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property isSelect (base name: "isSelect")', function() {
       // uncomment below and update the code to test the property isSelect
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property orderNumber (base name: "orderNumber")', function() {
       // uncomment below and update the code to test the property orderNumber
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property pageSize (base name: "pageSize")', function() {
       // uncomment below and update the code to test the property pageSize
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property productType (base name: "productType")', function() {
       // uncomment below and update the code to test the property productType
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property results (base name: "results")', function() {
       // uncomment below and update the code to test the property results
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property scheduleType (base name: "scheduleType")', function() {
       // uncomment below and update the code to test the property scheduleType
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property searchContentIds (base name: "searchContentIds")', function() {
       // uncomment below and update the code to test the property searchContentIds
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property searchDevGroupIds (base name: "searchDevGroupIds")', function() {
       // uncomment below and update the code to test the property searchDevGroupIds
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property searchId (base name: "searchId")', function() {
       // uncomment below and update the code to test the property searchId
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property searchText (base name: "searchText")', function() {
       // uncomment below and update the code to test the property searchText
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property selectId (base name: "selectId")', function() {
       // uncomment below and update the code to test the property selectId
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property sortColumn (base name: "sortColumn")', function() {
       // uncomment below and update the code to test the property sortColumn
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property sortOrder (base name: "sortOrder")', function() {
       // uncomment below and update the code to test the property sortOrder
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property startIndex (base name: "startIndex")', function() {
       // uncomment below and update the code to test the property startIndex
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property startModifiedDate (base name: "startModifiedDate")', function() {
       // uncomment below and update the code to test the property startModifiedDate
-      //var instane = new MagicInfoServerV4xRestApi.ScheduleFilter();
+      //var instane = new MagicInfoServerV4RestApi.ScheduleFilter();
       //expect(instance).to.be();
     });
 

@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4x REST API
- * MagicInfo Server V4x REST API
+ * MagicInfo Server V4 REST API
+ * MagicInfo Server V4 REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV4xRestApi);
+    factory(root.expect, root.MagicInfoServerV4RestApi);
   }
-}(this, function(expect, MagicInfoServerV4xRestApi) {
+}(this, function(expect, MagicInfoServerV4RestApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV4xRestApi.Timestamp();
+    instance = new MagicInfoServerV4RestApi.Timestamp();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,55 +52,55 @@
   describe('Timestamp', function() {
     it('should create an instance of Timestamp', function() {
       // uncomment below and update the code to test Timestamp
-      //var instane = new MagicInfoServerV4xRestApi.Timestamp();
-      //expect(instance).to.be.a(MagicInfoServerV4xRestApi.Timestamp);
+      //var instane = new MagicInfoServerV4RestApi.Timestamp();
+      //expect(instance).to.be.a(MagicInfoServerV4RestApi.Timestamp);
     });
 
     it('should have the property _date (base name: "date")', function() {
       // uncomment below and update the code to test the property _date
-      //var instane = new MagicInfoServerV4xRestApi.Timestamp();
+      //var instane = new MagicInfoServerV4RestApi.Timestamp();
       //expect(instance).to.be();
     });
 
     it('should have the property hours (base name: "hours")', function() {
       // uncomment below and update the code to test the property hours
-      //var instane = new MagicInfoServerV4xRestApi.Timestamp();
+      //var instane = new MagicInfoServerV4RestApi.Timestamp();
       //expect(instance).to.be();
     });
 
     it('should have the property minutes (base name: "minutes")', function() {
       // uncomment below and update the code to test the property minutes
-      //var instane = new MagicInfoServerV4xRestApi.Timestamp();
+      //var instane = new MagicInfoServerV4RestApi.Timestamp();
       //expect(instance).to.be();
     });
 
     it('should have the property month (base name: "month")', function() {
       // uncomment below and update the code to test the property month
-      //var instane = new MagicInfoServerV4xRestApi.Timestamp();
+      //var instane = new MagicInfoServerV4RestApi.Timestamp();
       //expect(instance).to.be();
     });
 
     it('should have the property nanos (base name: "nanos")', function() {
       // uncomment below and update the code to test the property nanos
-      //var instane = new MagicInfoServerV4xRestApi.Timestamp();
+      //var instane = new MagicInfoServerV4RestApi.Timestamp();
       //expect(instance).to.be();
     });
 
     it('should have the property seconds (base name: "seconds")', function() {
       // uncomment below and update the code to test the property seconds
-      //var instane = new MagicInfoServerV4xRestApi.Timestamp();
+      //var instane = new MagicInfoServerV4RestApi.Timestamp();
       //expect(instance).to.be();
     });
 
     it('should have the property time (base name: "time")', function() {
       // uncomment below and update the code to test the property time
-      //var instane = new MagicInfoServerV4xRestApi.Timestamp();
+      //var instane = new MagicInfoServerV4RestApi.Timestamp();
       //expect(instance).to.be();
     });
 
     it('should have the property year (base name: "year")', function() {
       // uncomment below and update the code to test the property year
-      //var instane = new MagicInfoServerV4xRestApi.Timestamp();
+      //var instane = new MagicInfoServerV4RestApi.Timestamp();
       //expect(instance).to.be();
     });
 

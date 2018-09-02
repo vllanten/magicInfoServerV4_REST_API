@@ -1,4 +1,4 @@
-# MagicInfoServerV4xRestApi.EnvironmentNoticeFilter
+# MagicInfoServerV4RestApi.EnvironmentNoticeFilter
 
 ## Properties
 Name | Type | Description | Notes

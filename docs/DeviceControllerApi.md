@@ -1,4 +1,4 @@
-# MagicInfoServerV4xRestApi.DeviceControllerApi
+# MagicInfoServerV4RestApi.DeviceControllerApi
 
 All URIs are relative to *http://127.0.0.2:7001/MagicInfo*
 
@@ -46,8 +46,8 @@ approveDevice
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -55,11 +55,11 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
-var params = new MagicInfoServerV4xRestApi.DeviceApproveResource(); // DeviceApproveResource | params
+var params = new MagicInfoServerV4RestApi.DeviceApproveResource(); // DeviceApproveResource | params
 
 
 var callback = function(error, data, response) {
@@ -100,8 +100,8 @@ deleteDevice
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -109,11 +109,11 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
-var params = new MagicInfoServerV4xRestApi.DeviceFilter(); // DeviceFilter | params
+var params = new MagicInfoServerV4RestApi.DeviceFilter(); // DeviceFilter | params
 
 
 var callback = function(error, data, response) {
@@ -154,8 +154,8 @@ filterDeviceList
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -163,9 +163,9 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
-var params = new MagicInfoServerV4xRestApi.DeviceFilter(); // DeviceFilter | params
+var params = new MagicInfoServerV4RestApi.DeviceFilter(); // DeviceFilter | params
 
 
 var callback = function(error, data, response) {
@@ -205,8 +205,8 @@ getCabinetList
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -214,11 +214,11 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
-var params = new MagicInfoServerV4xRestApi.DeviceFilter(); // DeviceFilter | params
+var params = new MagicInfoServerV4RestApi.DeviceFilter(); // DeviceFilter | params
 
 
 var callback = function(error, data, response) {
@@ -259,8 +259,8 @@ getCurrentStatusDisplay
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -268,7 +268,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
@@ -313,8 +313,8 @@ getCurrentStatusDisplay
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -322,7 +322,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
@@ -364,8 +364,8 @@ getCurrentStatusSecurity
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -373,7 +373,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
@@ -418,8 +418,8 @@ getCurrentStatusSecurity
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -427,7 +427,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
@@ -469,8 +469,8 @@ getCurrentStatusTime
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -478,7 +478,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
@@ -523,8 +523,8 @@ getCurrentStatusTime
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -532,7 +532,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
@@ -574,8 +574,8 @@ getDashboardDeviceInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -583,7 +583,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var callback = function(error, data, response) {
   if (error) {
@@ -619,8 +619,8 @@ getDevice
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -628,7 +628,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
@@ -670,8 +670,8 @@ getDisplayControlInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -679,7 +679,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
@@ -721,8 +721,8 @@ getGeneralInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -730,7 +730,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
@@ -772,8 +772,8 @@ getSecurityControlInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -781,7 +781,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
@@ -823,8 +823,8 @@ getSetupInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -832,7 +832,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
@@ -874,8 +874,8 @@ getTimeInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -883,7 +883,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
@@ -925,8 +925,8 @@ getUpdatedDisplayInfoResult
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -934,7 +934,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
@@ -979,8 +979,8 @@ getUpdatedGeneralInfoResult
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -988,7 +988,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
@@ -1033,8 +1033,8 @@ getUpdatedSetupInfoResult
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -1042,7 +1042,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
@@ -1087,8 +1087,8 @@ getUpdatedTimeInfoResult
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -1096,7 +1096,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
@@ -1141,8 +1141,8 @@ listAllDevice
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -1150,7 +1150,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var startIndex = 56; // Number | startIndex
 
@@ -1195,8 +1195,8 @@ moveDevice
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -1204,11 +1204,11 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
-var params = new MagicInfoServerV4xRestApi.DeviceFilter(); // DeviceFilter | params
+var params = new MagicInfoServerV4RestApi.DeviceFilter(); // DeviceFilter | params
 
 
 var callback = function(error, data, response) {
@@ -1249,8 +1249,8 @@ startRmServerVnc
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -1258,7 +1258,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
@@ -1300,8 +1300,8 @@ stopRmServerVnc
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -1309,7 +1309,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
@@ -1351,8 +1351,8 @@ updateCabinetInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -1360,11 +1360,11 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
-var params = new MagicInfoServerV4xRestApi.DeviceLedCabinetResource(); // DeviceLedCabinetResource | params
+var params = new MagicInfoServerV4RestApi.DeviceLedCabinetResource(); // DeviceLedCabinetResource | params
 
 
 var callback = function(error, data, response) {
@@ -1405,8 +1405,8 @@ updateDisplayInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -1414,11 +1414,11 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
-var params = new MagicInfoServerV4xRestApi.DeviceDisplayConfResource(); // DeviceDisplayConfResource | params
+var params = new MagicInfoServerV4RestApi.DeviceDisplayConfResource(); // DeviceDisplayConfResource | params
 
 
 var callback = function(error, data, response) {
@@ -1459,8 +1459,8 @@ updateGeneralInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -1468,11 +1468,11 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
-var params = new MagicInfoServerV4xRestApi.DeviceGeneralConfResource(); // DeviceGeneralConfResource | params
+var params = new MagicInfoServerV4RestApi.DeviceGeneralConfResource(); // DeviceGeneralConfResource | params
 
 
 var callback = function(error, data, response) {
@@ -1513,8 +1513,8 @@ updateGeneral
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -1522,11 +1522,11 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
-var params = new MagicInfoServerV4xRestApi.DeviceGeneralConfResource(); // DeviceGeneralConfResource | params
+var params = new MagicInfoServerV4RestApi.DeviceGeneralConfResource(); // DeviceGeneralConfResource | params
 
 
 var callback = function(error, data, response) {
@@ -1567,8 +1567,8 @@ updateSecurityInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -1576,11 +1576,11 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
-var params = new MagicInfoServerV4xRestApi.DeviceSecurityConfResource(); // DeviceSecurityConfResource | params
+var params = new MagicInfoServerV4RestApi.DeviceSecurityConfResource(); // DeviceSecurityConfResource | params
 
 
 var callback = function(error, data, response) {
@@ -1621,8 +1621,8 @@ updateSetupInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -1630,11 +1630,11 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
-var params = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource(); // DeviceSystemSetupConfResource | params
+var params = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource(); // DeviceSystemSetupConfResource | params
 
 
 var callback = function(error, data, response) {
@@ -1675,8 +1675,8 @@ updateTimeInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV4xRestApi = require('magic_info_server_v4x_rest_api');
-var defaultClient = MagicInfoServerV4xRestApi.ApiClient.instance;
+var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -1684,11 +1684,11 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4xRestApi.DeviceControllerApi();
+var apiInstance = new MagicInfoServerV4RestApi.DeviceControllerApi();
 
 var deviceId = "deviceId_example"; // String | deviceId
 
-var params = new MagicInfoServerV4xRestApi.DeviceTimeconfResource(); // DeviceTimeconfResource | params
+var params = new MagicInfoServerV4RestApi.DeviceTimeconfResource(); // DeviceTimeconfResource | params
 
 
 var callback = function(error, data, response) {

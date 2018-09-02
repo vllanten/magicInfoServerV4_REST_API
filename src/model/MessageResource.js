@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4x REST API
- * MagicInfo Server V4x REST API
+ * MagicInfo Server V4 REST API
+ * MagicInfo Server V4 REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./Timestamp'));
   } else {
     // Browser globals (root is window)
-    if (!root.MagicInfoServerV4xRestApi) {
-      root.MagicInfoServerV4xRestApi = {};
+    if (!root.MagicInfoServerV4RestApi) {
+      root.MagicInfoServerV4RestApi = {};
     }
-    root.MagicInfoServerV4xRestApi.MessageResource = factory(root.MagicInfoServerV4xRestApi.ApiClient, root.MagicInfoServerV4xRestApi.Timestamp);
+    root.MagicInfoServerV4RestApi.MessageResource = factory(root.MagicInfoServerV4RestApi.ApiClient, root.MagicInfoServerV4RestApi.Timestamp);
   }
 }(this, function(ApiClient, Timestamp) {
   'use strict';

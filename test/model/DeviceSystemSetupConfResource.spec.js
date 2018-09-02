@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4x REST API
- * MagicInfo Server V4x REST API
+ * MagicInfo Server V4 REST API
+ * MagicInfo Server V4 REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV4xRestApi);
+    factory(root.expect, root.MagicInfoServerV4RestApi);
   }
-}(this, function(expect, MagicInfoServerV4xRestApi) {
+}(this, function(expect, MagicInfoServerV4RestApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+    instance = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,343 +52,343 @@
   describe('DeviceSystemSetupConfResource', function() {
     it('should create an instance of DeviceSystemSetupConfResource', function() {
       // uncomment below and update the code to test DeviceSystemSetupConfResource
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
-      //expect(instance).to.be.a(MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource);
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
+      //expect(instance).to.be.a(MagicInfoServerV4RestApi.DeviceSystemSetupConfResource);
     });
 
     it('should have the property amsPlayMode (base name: "amsPlayMode")', function() {
       // uncomment below and update the code to test the property amsPlayMode
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property autoComputerNameSet (base name: "autoComputerNameSet")', function() {
       // uncomment below and update the code to test the property autoComputerNameSet
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property autoIpSet (base name: "autoIpSet")', function() {
       // uncomment below and update the code to test the property autoIpSet
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property bandwidth (base name: "bandwidth")', function() {
       // uncomment below and update the code to test the property bandwidth
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property bgColor (base name: "bgColor")', function() {
       // uncomment below and update the code to test the property bgColor
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property computerName (base name: "computerName")', function() {
       // uncomment below and update the code to test the property computerName
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property connectionLimitTime (base name: "connectionLimitTime")', function() {
       // uncomment below and update the code to test the property connectionLimitTime
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property contentMnt (base name: "contentMnt")', function() {
       // uncomment below and update the code to test the property contentMnt
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property contentReadyInterval (base name: "contentReadyInterval")', function() {
       // uncomment below and update the code to test the property contentReadyInterval
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property contentsDownloadMode (base name: "contentsDownloadMode")', function() {
       // uncomment below and update the code to test the property contentsDownloadMode
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property contentsProgressEnable (base name: "contentsProgressEnable")', function() {
       // uncomment below and update the code to test the property contentsProgressEnable
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property contentsProgressInterval (base name: "contentsProgressInterval")', function() {
       // uncomment below and update the code to test the property contentsProgressInterval
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property contentsProgressUnit (base name: "contentsProgressUnit")', function() {
       // uncomment below and update the code to test the property contentsProgressUnit
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property dayLightSaving (base name: "dayLightSaving")', function() {
       // uncomment below and update the code to test the property dayLightSaving
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property dayLightSavingManual (base name: "dayLightSavingManual")', function() {
       // uncomment below and update the code to test the property dayLightSavingManual
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property downloadServer (base name: "downloadServer")', function() {
       // uncomment below and update the code to test the property downloadServer
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property dstEndDay (base name: "dstEndDay")', function() {
       // uncomment below and update the code to test the property dstEndDay
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property dstEndMonth (base name: "dstEndMonth")', function() {
       // uncomment below and update the code to test the property dstEndMonth
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property dstEndTime (base name: "dstEndTime")', function() {
       // uncomment below and update the code to test the property dstEndTime
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property dstEndWeek (base name: "dstEndWeek")', function() {
       // uncomment below and update the code to test the property dstEndWeek
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property dstManualChanged (base name: "dstManualChanged")', function() {
       // uncomment below and update the code to test the property dstManualChanged
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property dstStartDay (base name: "dstStartDay")', function() {
       // uncomment below and update the code to test the property dstStartDay
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property dstStartMonth (base name: "dstStartMonth")', function() {
       // uncomment below and update the code to test the property dstStartMonth
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property dstStartTime (base name: "dstStartTime")', function() {
       // uncomment below and update the code to test the property dstStartTime
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property dstStartWeek (base name: "dstStartWeek")', function() {
       // uncomment below and update the code to test the property dstStartWeek
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property dstTimeDifference (base name: "dstTimeDifference")', function() {
       // uncomment below and update the code to test the property dstTimeDifference
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property filedataDelSize (base name: "filedataDelSize")', function() {
       // uncomment below and update the code to test the property filedataDelSize
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property ftpConnectMode (base name: "ftpConnectMode")', function() {
       // uncomment below and update the code to test the property ftpConnectMode
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property ftpPort (base name: "ftpPort")', function() {
       // uncomment below and update the code to test the property ftpPort
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property logMnt (base name: "logMnt")', function() {
       // uncomment below and update the code to test the property logMnt
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property magicinfoServerUrl (base name: "magicinfoServerUrl")', function() {
       // uncomment below and update the code to test the property magicinfoServerUrl
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property mntFolderPath (base name: "mntFolderPath")', function() {
       // uncomment below and update the code to test the property mntFolderPath
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property monitoringInterval (base name: "monitoringInterval")', function() {
       // uncomment below and update the code to test the property monitoringInterval
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property onlyDnServer (base name: "onlyDnServer")', function() {
       // uncomment below and update the code to test the property onlyDnServer
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property playMode (base name: "playMode")', function() {
       // uncomment below and update the code to test the property playMode
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property playerResolution (base name: "playerResolution")', function() {
       // uncomment below and update the code to test the property playerResolution
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property playerStartTimeout (base name: "playerStartTimeout")', function() {
       // uncomment below and update the code to test the property playerStartTimeout
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property proofOfPlayMnt (base name: "proofOfPlayMnt")', function() {
       // uncomment below and update the code to test the property proofOfPlayMnt
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property proxyException (base name: "proxyException")', function() {
       // uncomment below and update the code to test the property proxyException
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property proxySetting (base name: "proxySetting")', function() {
       // uncomment below and update the code to test the property proxySetting
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property repositoryPath (base name: "repositoryPath")', function() {
       // uncomment below and update the code to test the property repositoryPath
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property resetPassword (base name: "resetPassword")', function() {
       // uncomment below and update the code to test the property resetPassword
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property screenCaptureInterval (base name: "screenCaptureInterval")', function() {
       // uncomment below and update the code to test the property screenCaptureInterval
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property screenRotation (base name: "screenRotation")', function() {
       // uncomment below and update the code to test the property screenRotation
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property statisticsFileRefresh (base name: "statisticsFileRefresh")', function() {
       // uncomment below and update the code to test the property statisticsFileRefresh
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property switchTime (base name: "switchTime")', function() {
       // uncomment below and update the code to test the property switchTime
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property systemRestartInterval (base name: "systemRestartInterval")', function() {
       // uncomment below and update the code to test the property systemRestartInterval
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property tagIdList (base name: "tagIdList")', function() {
       // uncomment below and update the code to test the property tagIdList
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property tagList (base name: "tagList")', function() {
       // uncomment below and update the code to test the property tagList
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property timeZoneIndex (base name: "timeZoneIndex")', function() {
       // uncomment below and update the code to test the property timeZoneIndex
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property timeZoneList (base name: "timeZoneList")', function() {
       // uncomment below and update the code to test the property timeZoneList
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property triggerInterval (base name: "triggerInterval")', function() {
       // uncomment below and update the code to test the property triggerInterval
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property tunnelingServer (base name: "tunnelingServer")', function() {
       // uncomment below and update the code to test the property tunnelingServer
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property urlLauncherAddress (base name: "urlLauncherAddress")', function() {
       // uncomment below and update the code to test the property urlLauncherAddress
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property urlLauncherTimeout (base name: "urlLauncherTimeout")', function() {
       // uncomment below and update the code to test the property urlLauncherTimeout
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property useMpplayer (base name: "useMpplayer")', function() {
       // uncomment below and update the code to test the property useMpplayer
-      //var instane = new MagicInfoServerV4xRestApi.DeviceSystemSetupConfResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceSystemSetupConfResource();
       //expect(instance).to.be();
     });
 

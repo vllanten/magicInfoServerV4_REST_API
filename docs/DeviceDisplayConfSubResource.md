@@ -1,4 +1,4 @@
-# MagicInfoServerV4xRestApi.DeviceDisplayConfSubResource
+# MagicInfoServerV4RestApi.DeviceDisplayConfSubResource
 
 ## Properties
 Name | Type | Description | Notes

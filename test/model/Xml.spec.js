@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4x REST API
- * MagicInfo Server V4x REST API
+ * MagicInfo Server V4 REST API
+ * MagicInfo Server V4 REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV4xRestApi);
+    factory(root.expect, root.MagicInfoServerV4RestApi);
   }
-}(this, function(expect, MagicInfoServerV4xRestApi) {
+}(this, function(expect, MagicInfoServerV4RestApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV4xRestApi.Xml();
+    instance = new MagicInfoServerV4RestApi.Xml();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,37 +52,37 @@
   describe('Xml', function() {
     it('should create an instance of Xml', function() {
       // uncomment below and update the code to test Xml
-      //var instane = new MagicInfoServerV4xRestApi.Xml();
-      //expect(instance).to.be.a(MagicInfoServerV4xRestApi.Xml);
+      //var instane = new MagicInfoServerV4RestApi.Xml();
+      //expect(instance).to.be.a(MagicInfoServerV4RestApi.Xml);
     });
 
     it('should have the property attribute (base name: "attribute")', function() {
       // uncomment below and update the code to test the property attribute
-      //var instane = new MagicInfoServerV4xRestApi.Xml();
+      //var instane = new MagicInfoServerV4RestApi.Xml();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new MagicInfoServerV4xRestApi.Xml();
+      //var instane = new MagicInfoServerV4RestApi.Xml();
       //expect(instance).to.be();
     });
 
     it('should have the property namespace (base name: "namespace")', function() {
       // uncomment below and update the code to test the property namespace
-      //var instane = new MagicInfoServerV4xRestApi.Xml();
+      //var instane = new MagicInfoServerV4RestApi.Xml();
       //expect(instance).to.be();
     });
 
     it('should have the property prefix (base name: "prefix")', function() {
       // uncomment below and update the code to test the property prefix
-      //var instane = new MagicInfoServerV4xRestApi.Xml();
+      //var instane = new MagicInfoServerV4RestApi.Xml();
       //expect(instance).to.be();
     });
 
     it('should have the property wrapped (base name: "wrapped")', function() {
       // uncomment below and update the code to test the property wrapped
-      //var instane = new MagicInfoServerV4xRestApi.Xml();
+      //var instane = new MagicInfoServerV4RestApi.Xml();
       //expect(instance).to.be();
     });
 

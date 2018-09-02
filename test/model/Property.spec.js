@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4x REST API
- * MagicInfo Server V4x REST API
+ * MagicInfo Server V4 REST API
+ * MagicInfo Server V4 REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV4xRestApi);
+    factory(root.expect, root.MagicInfoServerV4RestApi);
   }
-}(this, function(expect, MagicInfoServerV4xRestApi) {
+}(this, function(expect, MagicInfoServerV4RestApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV4xRestApi.Property();
+    instance = new MagicInfoServerV4RestApi.Property();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,61 +52,61 @@
   describe('Property', function() {
     it('should create an instance of Property', function() {
       // uncomment below and update the code to test Property
-      //var instane = new MagicInfoServerV4xRestApi.Property();
-      //expect(instance).to.be.a(MagicInfoServerV4xRestApi.Property);
+      //var instane = new MagicInfoServerV4RestApi.Property();
+      //expect(instance).to.be.a(MagicInfoServerV4RestApi.Property);
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instane = new MagicInfoServerV4xRestApi.Property();
+      //var instane = new MagicInfoServerV4RestApi.Property();
       //expect(instance).to.be();
     });
 
     it('should have the property example (base name: "example")', function() {
       // uncomment below and update the code to test the property example
-      //var instane = new MagicInfoServerV4xRestApi.Property();
+      //var instane = new MagicInfoServerV4RestApi.Property();
       //expect(instance).to.be();
     });
 
     it('should have the property format (base name: "format")', function() {
       // uncomment below and update the code to test the property format
-      //var instane = new MagicInfoServerV4xRestApi.Property();
+      //var instane = new MagicInfoServerV4RestApi.Property();
       //expect(instance).to.be();
     });
 
     it('should have the property position (base name: "position")', function() {
       // uncomment below and update the code to test the property position
-      //var instane = new MagicInfoServerV4xRestApi.Property();
+      //var instane = new MagicInfoServerV4RestApi.Property();
       //expect(instance).to.be();
     });
 
     it('should have the property readOnly (base name: "readOnly")', function() {
       // uncomment below and update the code to test the property readOnly
-      //var instane = new MagicInfoServerV4xRestApi.Property();
+      //var instane = new MagicInfoServerV4RestApi.Property();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instane = new MagicInfoServerV4xRestApi.Property();
+      //var instane = new MagicInfoServerV4RestApi.Property();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instane = new MagicInfoServerV4xRestApi.Property();
+      //var instane = new MagicInfoServerV4RestApi.Property();
       //expect(instance).to.be();
     });
 
     it('should have the property vendorExtensions (base name: "vendorExtensions")', function() {
       // uncomment below and update the code to test the property vendorExtensions
-      //var instane = new MagicInfoServerV4xRestApi.Property();
+      //var instane = new MagicInfoServerV4RestApi.Property();
       //expect(instance).to.be();
     });
 
     it('should have the property xml (base name: "xml")', function() {
       // uncomment below and update the code to test the property xml
-      //var instane = new MagicInfoServerV4xRestApi.Property();
+      //var instane = new MagicInfoServerV4RestApi.Property();
       //expect(instance).to.be();
     });
 

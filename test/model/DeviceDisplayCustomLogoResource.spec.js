@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4x REST API
- * MagicInfo Server V4x REST API
+ * MagicInfo Server V4 REST API
+ * MagicInfo Server V4 REST API
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV4xRestApi);
+    factory(root.expect, root.MagicInfoServerV4RestApi);
   }
-}(this, function(expect, MagicInfoServerV4xRestApi) {
+}(this, function(expect, MagicInfoServerV4RestApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV4xRestApi.DeviceDisplayCustomLogoResource();
+    instance = new MagicInfoServerV4RestApi.DeviceDisplayCustomLogoResource();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,31 +52,31 @@
   describe('DeviceDisplayCustomLogoResource', function() {
     it('should create an instance of DeviceDisplayCustomLogoResource', function() {
       // uncomment below and update the code to test DeviceDisplayCustomLogoResource
-      //var instane = new MagicInfoServerV4xRestApi.DeviceDisplayCustomLogoResource();
-      //expect(instance).to.be.a(MagicInfoServerV4xRestApi.DeviceDisplayCustomLogoResource);
+      //var instane = new MagicInfoServerV4RestApi.DeviceDisplayCustomLogoResource();
+      //expect(instance).to.be.a(MagicInfoServerV4RestApi.DeviceDisplayCustomLogoResource);
     });
 
     it('should have the property changed (base name: "changed")', function() {
       // uncomment below and update the code to test the property changed
-      //var instane = new MagicInfoServerV4xRestApi.DeviceDisplayCustomLogoResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceDisplayCustomLogoResource();
       //expect(instance).to.be();
     });
 
     it('should have the property displayTime (base name: "displayTime")', function() {
       // uncomment below and update the code to test the property displayTime
-      //var instane = new MagicInfoServerV4xRestApi.DeviceDisplayCustomLogoResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceDisplayCustomLogoResource();
       //expect(instance).to.be();
     });
 
     it('should have the property fileType (base name: "fileType")', function() {
       // uncomment below and update the code to test the property fileType
-      //var instane = new MagicInfoServerV4xRestApi.DeviceDisplayCustomLogoResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceDisplayCustomLogoResource();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instane = new MagicInfoServerV4xRestApi.DeviceDisplayCustomLogoResource();
+      //var instane = new MagicInfoServerV4RestApi.DeviceDisplayCustomLogoResource();
       //expect(instance).to.be();
     });
 
