@@ -57,7 +57,6 @@
 
     /**
      * Authorization
-     * alsjdlksajd lkas dlsa jd
      * @param {module:model/AuthResource} userLogin resource
      * @param {module:api/AuthApi~authorizationCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/TokenAuth}

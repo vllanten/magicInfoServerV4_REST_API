@@ -14,8 +14,6 @@ Method | HTTP request | Description
 
 Authorization
 
-alsjdlksajd lkas dlsa jd
-
 ### Example
 ```javascript
 var MagicInfoServerV41RestApi = require('magic_info_server_v41___rest_api');
