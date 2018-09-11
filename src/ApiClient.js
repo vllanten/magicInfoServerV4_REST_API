@@ -46,9 +46,9 @@
     /**
      * The base URL against which to resolve every API call's (relative) path.
      * @type {String}
-     * @default http://127.0.0.2:7001/MagicInfo
+     * @default http://magicinfo.icluster.cl:7001/MagicInfo
      */
-    this.basePath = 'http://127.0.0.2:7001/MagicInfo'.replace(/\/+$/, '');
+    this.basePath = 'http://magicinfo.icluster.cl:7001/MagicInfo'.replace(/\/+$/, '');
 
     /**
      * The authentication methods to be included for all API calls.
