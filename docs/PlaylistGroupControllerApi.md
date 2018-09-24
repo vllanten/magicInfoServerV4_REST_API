@@ -1,6 +1,6 @@
 # MagicInfoServerV4RestApi.PlaylistGroupControllerApi
 
-All URIs are relative to *http://magicinfo.icluster.cl:7001/MagicInfo*
+All URIs are relative to *http://127.0.0.1:7001/MagicInfo*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
