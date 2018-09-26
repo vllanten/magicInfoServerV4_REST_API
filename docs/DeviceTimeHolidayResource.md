@@ -1,4 +1,4 @@
-# MagicInfoServerV4RestApi.DeviceTimeHolidayResource
+# MagicInfoApi.DeviceTimeHolidayResource
 
 ## Properties
 Name | Type | Description | Notes

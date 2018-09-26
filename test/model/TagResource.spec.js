@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4 REST API
- * MagicInfo Server V4 REST API
+ * magic info api
+ * magic info api
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV4RestApi);
+    factory(root.expect, root.MagicInfoApi);
   }
-}(this, function(expect, MagicInfoServerV4RestApi) {
+}(this, function(expect, MagicInfoApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV4RestApi.TagResource();
+    instance = new MagicInfoApi.TagResource();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,25 +52,25 @@
   describe('TagResource', function() {
     it('should create an instance of TagResource', function() {
       // uncomment below and update the code to test TagResource
-      //var instane = new MagicInfoServerV4RestApi.TagResource();
-      //expect(instance).to.be.a(MagicInfoServerV4RestApi.TagResource);
+      //var instane = new MagicInfoApi.TagResource();
+      //expect(instance).to.be.a(MagicInfoApi.TagResource);
     });
 
     it('should have the property pageSize (base name: "pageSize")', function() {
       // uncomment below and update the code to test the property pageSize
-      //var instane = new MagicInfoServerV4RestApi.TagResource();
+      //var instane = new MagicInfoApi.TagResource();
       //expect(instance).to.be();
     });
 
     it('should have the property startIndex (base name: "startIndex")', function() {
       // uncomment below and update the code to test the property startIndex
-      //var instane = new MagicInfoServerV4RestApi.TagResource();
+      //var instane = new MagicInfoApi.TagResource();
       //expect(instance).to.be();
     });
 
     it('should have the property tagList (base name: "tagList")', function() {
       // uncomment below and update the code to test the property tagList
-      //var instane = new MagicInfoServerV4RestApi.TagResource();
+      //var instane = new MagicInfoApi.TagResource();
       //expect(instance).to.be();
     });
 

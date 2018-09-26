@@ -1,4 +1,4 @@
-# MagicInfoServerV4RestApi.Property
+# MagicInfoApi.Property
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4 REST API
- * MagicInfo Server V4 REST API
+ * magic info api
+ * magic info api
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV4RestApi);
+    factory(root.expect, root.MagicInfoApi);
   }
-}(this, function(expect, MagicInfoServerV4RestApi) {
+}(this, function(expect, MagicInfoApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV4RestApi.DeviceTimeClockConf();
+    instance = new MagicInfoApi.DeviceTimeClockConf();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,73 +52,73 @@
   describe('DeviceTimeClockConf', function() {
     it('should create an instance of DeviceTimeClockConf', function() {
       // uncomment below and update the code to test DeviceTimeClockConf
-      //var instane = new MagicInfoServerV4RestApi.DeviceTimeClockConf();
-      //expect(instance).to.be.a(MagicInfoServerV4RestApi.DeviceTimeClockConf);
+      //var instane = new MagicInfoApi.DeviceTimeClockConf();
+      //expect(instance).to.be.a(MagicInfoApi.DeviceTimeClockConf);
     });
 
     it('should have the property clockAmpm (base name: "clockAmpm")', function() {
       // uncomment below and update the code to test the property clockAmpm
-      //var instane = new MagicInfoServerV4RestApi.DeviceTimeClockConf();
+      //var instane = new MagicInfoApi.DeviceTimeClockConf();
       //expect(instance).to.be();
     });
 
     it('should have the property clockDay (base name: "clockDay")', function() {
       // uncomment below and update the code to test the property clockDay
-      //var instane = new MagicInfoServerV4RestApi.DeviceTimeClockConf();
+      //var instane = new MagicInfoApi.DeviceTimeClockConf();
       //expect(instance).to.be();
     });
 
     it('should have the property clockH (base name: "clockH")', function() {
       // uncomment below and update the code to test the property clockH
-      //var instane = new MagicInfoServerV4RestApi.DeviceTimeClockConf();
+      //var instane = new MagicInfoApi.DeviceTimeClockConf();
       //expect(instance).to.be();
     });
 
     it('should have the property clockM (base name: "clockM")', function() {
       // uncomment below and update the code to test the property clockM
-      //var instane = new MagicInfoServerV4RestApi.DeviceTimeClockConf();
+      //var instane = new MagicInfoApi.DeviceTimeClockConf();
       //expect(instance).to.be();
     });
 
     it('should have the property clockMon (base name: "clockMon")', function() {
       // uncomment below and update the code to test the property clockMon
-      //var instane = new MagicInfoServerV4RestApi.DeviceTimeClockConf();
+      //var instane = new MagicInfoApi.DeviceTimeClockConf();
       //expect(instance).to.be();
     });
 
     it('should have the property clockY1 (base name: "clockY1")', function() {
       // uncomment below and update the code to test the property clockY1
-      //var instane = new MagicInfoServerV4RestApi.DeviceTimeClockConf();
+      //var instane = new MagicInfoApi.DeviceTimeClockConf();
       //expect(instance).to.be();
     });
 
     it('should have the property clockY2 (base name: "clockY2")', function() {
       // uncomment below and update the code to test the property clockY2
-      //var instane = new MagicInfoServerV4RestApi.DeviceTimeClockConf();
+      //var instane = new MagicInfoApi.DeviceTimeClockConf();
       //expect(instance).to.be();
     });
 
     it('should have the property deviceId (base name: "deviceId")', function() {
       // uncomment below and update the code to test the property deviceId
-      //var instane = new MagicInfoServerV4RestApi.DeviceTimeClockConf();
+      //var instane = new MagicInfoApi.DeviceTimeClockConf();
       //expect(instance).to.be();
     });
 
     it('should have the property deviceModelCode (base name: "deviceModelCode")', function() {
       // uncomment below and update the code to test the property deviceModelCode
-      //var instane = new MagicInfoServerV4RestApi.DeviceTimeClockConf();
+      //var instane = new MagicInfoApi.DeviceTimeClockConf();
       //expect(instance).to.be();
     });
 
     it('should have the property deviceModelName (base name: "deviceModelName")', function() {
       // uncomment below and update the code to test the property deviceModelName
-      //var instane = new MagicInfoServerV4RestApi.DeviceTimeClockConf();
+      //var instane = new MagicInfoApi.DeviceTimeClockConf();
       //expect(instance).to.be();
     });
 
     it('should have the property deviceName (base name: "deviceName")', function() {
       // uncomment below and update the code to test the property deviceName
-      //var instane = new MagicInfoServerV4RestApi.DeviceTimeClockConf();
+      //var instane = new MagicInfoApi.DeviceTimeClockConf();
       //expect(instance).to.be();
     });
 

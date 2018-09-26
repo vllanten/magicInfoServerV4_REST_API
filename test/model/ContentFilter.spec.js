@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4 REST API
- * MagicInfo Server V4 REST API
+ * magic info api
+ * magic info api
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV4RestApi);
+    factory(root.expect, root.MagicInfoApi);
   }
-}(this, function(expect, MagicInfoServerV4RestApi) {
+}(this, function(expect, MagicInfoApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV4RestApi.ContentFilter();
+    instance = new MagicInfoApi.ContentFilter();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,97 +52,97 @@
   describe('ContentFilter', function() {
     it('should create an instance of ContentFilter', function() {
       // uncomment below and update the code to test ContentFilter
-      //var instane = new MagicInfoServerV4RestApi.ContentFilter();
-      //expect(instance).to.be.a(MagicInfoServerV4RestApi.ContentFilter);
+      //var instane = new MagicInfoApi.ContentFilter();
+      //expect(instance).to.be.a(MagicInfoApi.ContentFilter);
     });
 
     it('should have the property category (base name: "category")', function() {
       // uncomment below and update the code to test the property category
-      //var instane = new MagicInfoServerV4RestApi.ContentFilter();
+      //var instane = new MagicInfoApi.ContentFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property deviceType (base name: "deviceType")', function() {
       // uncomment below and update the code to test the property deviceType
-      //var instane = new MagicInfoServerV4RestApi.ContentFilter();
+      //var instane = new MagicInfoApi.ContentFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property deviceTypeVersion (base name: "deviceTypeVersion")', function() {
       // uncomment below and update the code to test the property deviceTypeVersion
-      //var instane = new MagicInfoServerV4RestApi.ContentFilter();
+      //var instane = new MagicInfoApi.ContentFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property groupId (base name: "groupId")', function() {
       // uncomment below and update the code to test the property groupId
-      //var instane = new MagicInfoServerV4RestApi.ContentFilter();
+      //var instane = new MagicInfoApi.ContentFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property groupType (base name: "groupType")', function() {
       // uncomment below and update the code to test the property groupType
-      //var instane = new MagicInfoServerV4RestApi.ContentFilter();
+      //var instane = new MagicInfoApi.ContentFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property mediaType (base name: "mediaType")', function() {
       // uncomment below and update the code to test the property mediaType
-      //var instane = new MagicInfoServerV4RestApi.ContentFilter();
+      //var instane = new MagicInfoApi.ContentFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property mediaTypeFilter (base name: "mediaTypeFilter")', function() {
       // uncomment below and update the code to test the property mediaTypeFilter
-      //var instane = new MagicInfoServerV4RestApi.ContentFilter();
+      //var instane = new MagicInfoApi.ContentFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property pageSize (base name: "pageSize")', function() {
       // uncomment below and update the code to test the property pageSize
-      //var instane = new MagicInfoServerV4RestApi.ContentFilter();
+      //var instane = new MagicInfoApi.ContentFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property searchText (base name: "searchText")', function() {
       // uncomment below and update the code to test the property searchText
-      //var instane = new MagicInfoServerV4RestApi.ContentFilter();
+      //var instane = new MagicInfoApi.ContentFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property selectId (base name: "selectId")', function() {
       // uncomment below and update the code to test the property selectId
-      //var instane = new MagicInfoServerV4RestApi.ContentFilter();
+      //var instane = new MagicInfoApi.ContentFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property sortColumn (base name: "sortColumn")', function() {
       // uncomment below and update the code to test the property sortColumn
-      //var instane = new MagicInfoServerV4RestApi.ContentFilter();
+      //var instane = new MagicInfoApi.ContentFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property sortOrder (base name: "sortOrder")', function() {
       // uncomment below and update the code to test the property sortOrder
-      //var instane = new MagicInfoServerV4RestApi.ContentFilter();
+      //var instane = new MagicInfoApi.ContentFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property startIndex (base name: "startIndex")', function() {
       // uncomment below and update the code to test the property startIndex
-      //var instane = new MagicInfoServerV4RestApi.ContentFilter();
+      //var instane = new MagicInfoApi.ContentFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property tag (base name: "tag")', function() {
       // uncomment below and update the code to test the property tag
-      //var instane = new MagicInfoServerV4RestApi.ContentFilter();
+      //var instane = new MagicInfoApi.ContentFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "userId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instane = new MagicInfoServerV4RestApi.ContentFilter();
+      //var instane = new MagicInfoApi.ContentFilter();
       //expect(instance).to.be();
     });
 

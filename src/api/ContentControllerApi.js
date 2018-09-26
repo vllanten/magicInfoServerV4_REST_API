@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4 REST API
- * MagicInfo Server V4 REST API
+ * magic info api
+ * magic info api
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/ContentApproveResource'), require('../model/ContentFilter'), require('../model/Error'), require('../model/ResponseBody'));
   } else {
     // Browser globals (root is window)
-    if (!root.MagicInfoServerV4RestApi) {
-      root.MagicInfoServerV4RestApi = {};
+    if (!root.MagicInfoApi) {
+      root.MagicInfoApi = {};
     }
-    root.MagicInfoServerV4RestApi.ContentControllerApi = factory(root.MagicInfoServerV4RestApi.ApiClient, root.MagicInfoServerV4RestApi.ContentApproveResource, root.MagicInfoServerV4RestApi.ContentFilter, root.MagicInfoServerV4RestApi.Error, root.MagicInfoServerV4RestApi.ResponseBody);
+    root.MagicInfoApi.ContentControllerApi = factory(root.MagicInfoApi.ApiClient, root.MagicInfoApi.ContentApproveResource, root.MagicInfoApi.ContentFilter, root.MagicInfoApi.Error, root.MagicInfoApi.ResponseBody);
   }
 }(this, function(ApiClient, ContentApproveResource, ContentFilter, Error, ResponseBody) {
   'use strict';

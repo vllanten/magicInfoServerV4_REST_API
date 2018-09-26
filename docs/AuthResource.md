@@ -1,4 +1,4 @@
-# MagicInfoServerV4RestApi.AuthResource
+# MagicInfoApi.AuthResource
 
 ## Properties
 Name | Type | Description | Notes

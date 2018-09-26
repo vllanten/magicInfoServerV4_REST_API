@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4 REST API
- * MagicInfo Server V4 REST API
+ * magic info api
+ * magic info api
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV4RestApi);
+    factory(root.expect, root.MagicInfoApi);
   }
-}(this, function(expect, MagicInfoServerV4RestApi) {
+}(this, function(expect, MagicInfoApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV4RestApi.DeviceSecurityConfResource();
+    instance = new MagicInfoApi.DeviceSecurityConfResource();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,61 +52,61 @@
   describe('DeviceSecurityConfResource', function() {
     it('should create an instance of DeviceSecurityConfResource', function() {
       // uncomment below and update the code to test DeviceSecurityConfResource
-      //var instane = new MagicInfoServerV4RestApi.DeviceSecurityConfResource();
-      //expect(instance).to.be.a(MagicInfoServerV4RestApi.DeviceSecurityConfResource);
+      //var instane = new MagicInfoApi.DeviceSecurityConfResource();
+      //expect(instance).to.be.a(MagicInfoApi.DeviceSecurityConfResource);
     });
 
     it('should have the property isInitSecurity (base name: "isInitSecurity")', function() {
       // uncomment below and update the code to test the property isInitSecurity
-      //var instane = new MagicInfoServerV4RestApi.DeviceSecurityConfResource();
+      //var instane = new MagicInfoApi.DeviceSecurityConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property miscAllLock (base name: "miscAllLock")', function() {
       // uncomment below and update the code to test the property miscAllLock
-      //var instane = new MagicInfoServerV4RestApi.DeviceSecurityConfResource();
+      //var instane = new MagicInfoApi.DeviceSecurityConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property miscBlockNetworkConnection (base name: "miscBlockNetworkConnection")', function() {
       // uncomment below and update the code to test the property miscBlockNetworkConnection
-      //var instane = new MagicInfoServerV4RestApi.DeviceSecurityConfResource();
+      //var instane = new MagicInfoApi.DeviceSecurityConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property miscBlockUsbPort (base name: "miscBlockUsbPort")', function() {
       // uncomment below and update the code to test the property miscBlockUsbPort
-      //var instane = new MagicInfoServerV4RestApi.DeviceSecurityConfResource();
+      //var instane = new MagicInfoApi.DeviceSecurityConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property miscPanelLock (base name: "miscPanelLock")', function() {
       // uncomment below and update the code to test the property miscPanelLock
-      //var instane = new MagicInfoServerV4RestApi.DeviceSecurityConfResource();
+      //var instane = new MagicInfoApi.DeviceSecurityConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property miscRemocon (base name: "miscRemocon")', function() {
       // uncomment below and update the code to test the property miscRemocon
-      //var instane = new MagicInfoServerV4RestApi.DeviceSecurityConfResource();
+      //var instane = new MagicInfoApi.DeviceSecurityConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property miscWhiteList (base name: "miscWhiteList")', function() {
       // uncomment below and update the code to test the property miscWhiteList
-      //var instane = new MagicInfoServerV4RestApi.DeviceSecurityConfResource();
+      //var instane = new MagicInfoApi.DeviceSecurityConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property mntSafetyLock (base name: "mntSafetyLock")', function() {
       // uncomment below and update the code to test the property mntSafetyLock
-      //var instane = new MagicInfoServerV4RestApi.DeviceSecurityConfResource();
+      //var instane = new MagicInfoApi.DeviceSecurityConfResource();
       //expect(instance).to.be();
     });
 
     it('should have the property touchControlLock (base name: "touchControlLock")', function() {
       // uncomment below and update the code to test the property touchControlLock
-      //var instane = new MagicInfoServerV4RestApi.DeviceSecurityConfResource();
+      //var instane = new MagicInfoApi.DeviceSecurityConfResource();
       //expect(instance).to.be();
     });
 

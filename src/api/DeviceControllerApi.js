@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4 REST API
- * MagicInfo Server V4 REST API
+ * magic info api
+ * magic info api
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/DeviceApproveResource'), require('../model/DeviceDisplayConfResource'), require('../model/DeviceFilter'), require('../model/DeviceGeneralConfResource'), require('../model/DeviceLedCabinetResource'), require('../model/DeviceSecurityConfResource'), require('../model/DeviceSystemSetupConfResource'), require('../model/DeviceTimeconfResource'), require('../model/Error'), require('../model/ResponseBody'));
   } else {
     // Browser globals (root is window)
-    if (!root.MagicInfoServerV4RestApi) {
-      root.MagicInfoServerV4RestApi = {};
+    if (!root.MagicInfoApi) {
+      root.MagicInfoApi = {};
     }
-    root.MagicInfoServerV4RestApi.DeviceControllerApi = factory(root.MagicInfoServerV4RestApi.ApiClient, root.MagicInfoServerV4RestApi.DeviceApproveResource, root.MagicInfoServerV4RestApi.DeviceDisplayConfResource, root.MagicInfoServerV4RestApi.DeviceFilter, root.MagicInfoServerV4RestApi.DeviceGeneralConfResource, root.MagicInfoServerV4RestApi.DeviceLedCabinetResource, root.MagicInfoServerV4RestApi.DeviceSecurityConfResource, root.MagicInfoServerV4RestApi.DeviceSystemSetupConfResource, root.MagicInfoServerV4RestApi.DeviceTimeconfResource, root.MagicInfoServerV4RestApi.Error, root.MagicInfoServerV4RestApi.ResponseBody);
+    root.MagicInfoApi.DeviceControllerApi = factory(root.MagicInfoApi.ApiClient, root.MagicInfoApi.DeviceApproveResource, root.MagicInfoApi.DeviceDisplayConfResource, root.MagicInfoApi.DeviceFilter, root.MagicInfoApi.DeviceGeneralConfResource, root.MagicInfoApi.DeviceLedCabinetResource, root.MagicInfoApi.DeviceSecurityConfResource, root.MagicInfoApi.DeviceSystemSetupConfResource, root.MagicInfoApi.DeviceTimeconfResource, root.MagicInfoApi.Error, root.MagicInfoApi.ResponseBody);
   }
 }(this, function(ApiClient, DeviceApproveResource, DeviceDisplayConfResource, DeviceFilter, DeviceGeneralConfResource, DeviceLedCabinetResource, DeviceSecurityConfResource, DeviceSystemSetupConfResource, DeviceTimeconfResource, Error, ResponseBody) {
   'use strict';

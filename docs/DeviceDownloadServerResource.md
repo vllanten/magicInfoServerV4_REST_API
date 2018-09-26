@@ -1,4 +1,4 @@
-# MagicInfoServerV4RestApi.DeviceDownloadServerResource
+# MagicInfoApi.DeviceDownloadServerResource
 
 ## Properties
 Name | Type | Description | Notes

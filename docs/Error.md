@@ -1,4 +1,4 @@
-# MagicInfoServerV4RestApi.Error
+# MagicInfoApi.Error
 
 ## Properties
 Name | Type | Description | Notes

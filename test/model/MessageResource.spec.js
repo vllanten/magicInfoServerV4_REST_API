@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4 REST API
- * MagicInfo Server V4 REST API
+ * magic info api
+ * magic info api
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV4RestApi);
+    factory(root.expect, root.MagicInfoApi);
   }
-}(this, function(expect, MagicInfoServerV4RestApi) {
+}(this, function(expect, MagicInfoApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV4RestApi.MessageResource();
+    instance = new MagicInfoApi.MessageResource();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,145 +52,145 @@
   describe('MessageResource', function() {
     it('should create an instance of MessageResource', function() {
       // uncomment below and update the code to test MessageResource
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
-      //expect(instance).to.be.a(MagicInfoServerV4RestApi.MessageResource);
+      //var instane = new MagicInfoApi.MessageResource();
+      //expect(instance).to.be.a(MagicInfoApi.MessageResource);
     });
 
     it('should have the property bgColor (base name: "bgColor")', function() {
       // uncomment below and update the code to test the property bgColor
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property bgImage (base name: "bgImage")', function() {
       // uncomment below and update the code to test the property bgImage
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property bold (base name: "bold")', function() {
       // uncomment below and update the code to test the property bold
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property color (base name: "color")', function() {
       // uncomment below and update the code to test the property color
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property createDate (base name: "createDate")', function() {
       // uncomment below and update the code to test the property createDate
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property direction (base name: "direction")', function() {
       // uncomment below and update the code to test the property direction
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property duration (base name: "duration")', function() {
       // uncomment below and update the code to test the property duration
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property endDate (base name: "endDate")', function() {
       // uncomment below and update the code to test the property endDate
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property font (base name: "font")', function() {
       // uncomment below and update the code to test the property font
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property isDeleted (base name: "isDeleted")', function() {
       // uncomment below and update the code to test the property isDeleted
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property italic (base name: "italic")', function() {
       // uncomment below and update the code to test the property italic
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property messageText (base name: "messageText")', function() {
       // uncomment below and update the code to test the property messageText
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property modifiedDate (base name: "modifiedDate")', function() {
       // uncomment below and update the code to test the property modifiedDate
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property monthdays (base name: "monthdays")', function() {
       // uncomment below and update the code to test the property monthdays
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property position (base name: "position")', function() {
       // uncomment below and update the code to test the property position
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property repeatType (base name: "repeatType")', function() {
       // uncomment below and update the code to test the property repeatType
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property size (base name: "size")', function() {
       // uncomment below and update the code to test the property size
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property speed (base name: "speed")', function() {
       // uncomment below and update the code to test the property speed
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property startDate (base name: "startDate")', function() {
       // uncomment below and update the code to test the property startDate
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property startTime (base name: "startTime")', function() {
       // uncomment below and update the code to test the property startTime
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property underline (base name: "underline")', function() {
       // uncomment below and update the code to test the property underline
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "userId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 
     it('should have the property weekdays (base name: "weekdays")', function() {
       // uncomment below and update the code to test the property weekdays
-      //var instane = new MagicInfoServerV4RestApi.MessageResource();
+      //var instane = new MagicInfoApi.MessageResource();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# MagicInfoServerV4RestApi.ContentScheduleControllerApi
+# MagicInfoApi.ContentScheduleControllerApi
 
 All URIs are relative to *http://127.0.0.1:7001/MagicInfo*
 
@@ -24,8 +24,8 @@ copyContentSchedule
 
 ### Example
 ```javascript
-var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
-var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
+var MagicInfoApi = require('magic_info_api');
+var defaultClient = MagicInfoApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -33,11 +33,11 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4RestApi.ContentScheduleControllerApi();
+var apiInstance = new MagicInfoApi.ContentScheduleControllerApi();
 
 var programId = "programId_example"; // String | programId
 
-var params = new MagicInfoServerV4RestApi.ContentScheduleResource(); // ContentScheduleResource | params
+var params = new MagicInfoApi.ContentScheduleResource(); // ContentScheduleResource | params
 
 
 var callback = function(error, data, response) {
@@ -78,8 +78,8 @@ createContentSchedule
 
 ### Example
 ```javascript
-var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
-var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
+var MagicInfoApi = require('magic_info_api');
+var defaultClient = MagicInfoApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -87,9 +87,9 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4RestApi.ContentScheduleControllerApi();
+var apiInstance = new MagicInfoApi.ContentScheduleControllerApi();
 
-var params = new MagicInfoServerV4RestApi.ContentScheduleResource(); // ContentScheduleResource | params
+var params = new MagicInfoApi.ContentScheduleResource(); // ContentScheduleResource | params
 
 
 var callback = function(error, data, response) {
@@ -129,8 +129,8 @@ deleteContentSchedule
 
 ### Example
 ```javascript
-var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
-var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
+var MagicInfoApi = require('magic_info_api');
+var defaultClient = MagicInfoApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -138,7 +138,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4RestApi.ContentScheduleControllerApi();
+var apiInstance = new MagicInfoApi.ContentScheduleControllerApi();
 
 var programId = "programId_example"; // String | programId
 
@@ -180,8 +180,8 @@ deployContentSchedule
 
 ### Example
 ```javascript
-var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
-var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
+var MagicInfoApi = require('magic_info_api');
+var defaultClient = MagicInfoApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -189,11 +189,11 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4RestApi.ContentScheduleControllerApi();
+var apiInstance = new MagicInfoApi.ContentScheduleControllerApi();
 
 var programId = "programId_example"; // String | programId
 
-var params = new MagicInfoServerV4RestApi.ContentScheduleResource(); // ContentScheduleResource | params
+var params = new MagicInfoApi.ContentScheduleResource(); // ContentScheduleResource | params
 
 
 var callback = function(error, data, response) {
@@ -234,8 +234,8 @@ editContentSchedule
 
 ### Example
 ```javascript
-var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
-var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
+var MagicInfoApi = require('magic_info_api');
+var defaultClient = MagicInfoApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -243,11 +243,11 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4RestApi.ContentScheduleControllerApi();
+var apiInstance = new MagicInfoApi.ContentScheduleControllerApi();
 
 var programId = "programId_example"; // String | programId
 
-var params = new MagicInfoServerV4RestApi.ContentScheduleResource(); // ContentScheduleResource | params
+var params = new MagicInfoApi.ContentScheduleResource(); // ContentScheduleResource | params
 
 
 var callback = function(error, data, response) {
@@ -288,8 +288,8 @@ getProgramInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
-var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
+var MagicInfoApi = require('magic_info_api');
+var defaultClient = MagicInfoApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -297,7 +297,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4RestApi.ContentScheduleControllerApi();
+var apiInstance = new MagicInfoApi.ContentScheduleControllerApi();
 
 var programId = "programId_example"; // String | programId
 
@@ -339,8 +339,8 @@ getPublishStatus
 
 ### Example
 ```javascript
-var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
-var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
+var MagicInfoApi = require('magic_info_api');
+var defaultClient = MagicInfoApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -348,7 +348,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4RestApi.ContentScheduleControllerApi();
+var apiInstance = new MagicInfoApi.ContentScheduleControllerApi();
 
 var programId = "programId_example"; // String | programId
 
@@ -390,8 +390,8 @@ listContentScheduleAll
 
 ### Example
 ```javascript
-var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
-var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
+var MagicInfoApi = require('magic_info_api');
+var defaultClient = MagicInfoApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -399,7 +399,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4RestApi.ContentScheduleControllerApi();
+var apiInstance = new MagicInfoApi.ContentScheduleControllerApi();
 
 var startIndex = 56; // Number | startIndex
 
@@ -444,8 +444,8 @@ listContentScheduleByGroup
 
 ### Example
 ```javascript
-var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
-var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
+var MagicInfoApi = require('magic_info_api');
+var defaultClient = MagicInfoApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -453,9 +453,9 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4RestApi.ContentScheduleControllerApi();
+var apiInstance = new MagicInfoApi.ContentScheduleControllerApi();
 
-var filter = new MagicInfoServerV4RestApi.ScheduleFilter(); // ScheduleFilter | filter
+var filter = new MagicInfoApi.ScheduleFilter(); // ScheduleFilter | filter
 
 
 var callback = function(error, data, response) {
@@ -495,8 +495,8 @@ listDashboardScheduleInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
-var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
+var MagicInfoApi = require('magic_info_api');
+var defaultClient = MagicInfoApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -504,7 +504,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4RestApi.ContentScheduleControllerApi();
+var apiInstance = new MagicInfoApi.ContentScheduleControllerApi();
 
 var callback = function(error, data, response) {
   if (error) {

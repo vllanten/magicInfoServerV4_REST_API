@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4 REST API
- * MagicInfo Server V4 REST API
+ * magic info api
+ * magic info api
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/Error'), require('../model/Response'), require('../model/ResponseBody'), require('../model/UserFilter'));
   } else {
     // Browser globals (root is window)
-    if (!root.MagicInfoServerV4RestApi) {
-      root.MagicInfoServerV4RestApi = {};
+    if (!root.MagicInfoApi) {
+      root.MagicInfoApi = {};
     }
-    root.MagicInfoServerV4RestApi.UserControllerApi = factory(root.MagicInfoServerV4RestApi.ApiClient, root.MagicInfoServerV4RestApi.Error, root.MagicInfoServerV4RestApi.Response, root.MagicInfoServerV4RestApi.ResponseBody, root.MagicInfoServerV4RestApi.UserFilter);
+    root.MagicInfoApi.UserControllerApi = factory(root.MagicInfoApi.ApiClient, root.MagicInfoApi.Error, root.MagicInfoApi.Response, root.MagicInfoApi.ResponseBody, root.MagicInfoApi.UserFilter);
   }
 }(this, function(ApiClient, Error, Response, ResponseBody, UserFilter) {
   'use strict';

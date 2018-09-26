@@ -1,4 +1,4 @@
-# MagicInfoServerV4RestApi.PlaylistControllerApi
+# MagicInfoApi.PlaylistControllerApi
 
 All URIs are relative to *http://127.0.0.1:7001/MagicInfo*
 
@@ -22,8 +22,8 @@ copyPlaylist
 
 ### Example
 ```javascript
-var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
-var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
+var MagicInfoApi = require('magic_info_api');
+var defaultClient = MagicInfoApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -31,11 +31,11 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4RestApi.PlaylistControllerApi();
+var apiInstance = new MagicInfoApi.PlaylistControllerApi();
 
 var playlistId = "playlistId_example"; // String | playlistId
 
-var params = new MagicInfoServerV4RestApi.PlaylistResource(); // PlaylistResource | params
+var params = new MagicInfoApi.PlaylistResource(); // PlaylistResource | params
 
 
 var callback = function(error, data, response) {
@@ -76,8 +76,8 @@ createPlaylist
 
 ### Example
 ```javascript
-var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
-var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
+var MagicInfoApi = require('magic_info_api');
+var defaultClient = MagicInfoApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -85,9 +85,9 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4RestApi.PlaylistControllerApi();
+var apiInstance = new MagicInfoApi.PlaylistControllerApi();
 
-var params = new MagicInfoServerV4RestApi.PlaylistResource(); // PlaylistResource | params
+var params = new MagicInfoApi.PlaylistResource(); // PlaylistResource | params
 
 
 var callback = function(error, data, response) {
@@ -127,8 +127,8 @@ deletePlaylist
 
 ### Example
 ```javascript
-var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
-var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
+var MagicInfoApi = require('magic_info_api');
+var defaultClient = MagicInfoApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -136,7 +136,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4RestApi.PlaylistControllerApi();
+var apiInstance = new MagicInfoApi.PlaylistControllerApi();
 
 var playlistId = "playlistId_example"; // String | playlistId
 
@@ -178,8 +178,8 @@ editPlaylist
 
 ### Example
 ```javascript
-var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
-var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
+var MagicInfoApi = require('magic_info_api');
+var defaultClient = MagicInfoApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -187,11 +187,11 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4RestApi.PlaylistControllerApi();
+var apiInstance = new MagicInfoApi.PlaylistControllerApi();
 
 var playlistId = "playlistId_example"; // String | playlistId
 
-var params = new MagicInfoServerV4RestApi.PlaylistResource(); // PlaylistResource | params
+var params = new MagicInfoApi.PlaylistResource(); // PlaylistResource | params
 
 
 var callback = function(error, data, response) {
@@ -232,8 +232,8 @@ getActivePlaylistInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
-var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
+var MagicInfoApi = require('magic_info_api');
+var defaultClient = MagicInfoApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -241,7 +241,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4RestApi.PlaylistControllerApi();
+var apiInstance = new MagicInfoApi.PlaylistControllerApi();
 
 var playlistId = "playlistId_example"; // String | playlistId
 
@@ -283,8 +283,8 @@ getDashboardPlaylistInfo
 
 ### Example
 ```javascript
-var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
-var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
+var MagicInfoApi = require('magic_info_api');
+var defaultClient = MagicInfoApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -292,7 +292,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4RestApi.PlaylistControllerApi();
+var apiInstance = new MagicInfoApi.PlaylistControllerApi();
 
 var callback = function(error, data, response) {
   if (error) {
@@ -328,8 +328,8 @@ listAllPlaylist
 
 ### Example
 ```javascript
-var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
-var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
+var MagicInfoApi = require('magic_info_api');
+var defaultClient = MagicInfoApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -337,7 +337,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4RestApi.PlaylistControllerApi();
+var apiInstance = new MagicInfoApi.PlaylistControllerApi();
 
 var startIndex = 56; // Number | startIndex
 
@@ -382,8 +382,8 @@ listPlaylist
 
 ### Example
 ```javascript
-var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
-var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
+var MagicInfoApi = require('magic_info_api');
+var defaultClient = MagicInfoApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -391,9 +391,9 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4RestApi.PlaylistControllerApi();
+var apiInstance = new MagicInfoApi.PlaylistControllerApi();
 
-var filter = new MagicInfoServerV4RestApi.PlaylistFilter(); // PlaylistFilter | filter
+var filter = new MagicInfoApi.PlaylistFilter(); // PlaylistFilter | filter
 
 
 var callback = function(error, data, response) {

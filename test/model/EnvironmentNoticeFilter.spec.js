@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4 REST API
- * MagicInfo Server V4 REST API
+ * magic info api
+ * magic info api
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV4RestApi);
+    factory(root.expect, root.MagicInfoApi);
   }
-}(this, function(expect, MagicInfoServerV4RestApi) {
+}(this, function(expect, MagicInfoApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV4RestApi.EnvironmentNoticeFilter();
+    instance = new MagicInfoApi.EnvironmentNoticeFilter();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,43 +52,43 @@
   describe('EnvironmentNoticeFilter', function() {
     it('should create an instance of EnvironmentNoticeFilter', function() {
       // uncomment below and update the code to test EnvironmentNoticeFilter
-      //var instane = new MagicInfoServerV4RestApi.EnvironmentNoticeFilter();
-      //expect(instance).to.be.a(MagicInfoServerV4RestApi.EnvironmentNoticeFilter);
+      //var instane = new MagicInfoApi.EnvironmentNoticeFilter();
+      //expect(instance).to.be.a(MagicInfoApi.EnvironmentNoticeFilter);
     });
 
     it('should have the property important (base name: "important")', function() {
       // uncomment below and update the code to test the property important
-      //var instane = new MagicInfoServerV4RestApi.EnvironmentNoticeFilter();
+      //var instane = new MagicInfoApi.EnvironmentNoticeFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property noticeEndDate (base name: "noticeEndDate")', function() {
       // uncomment below and update the code to test the property noticeEndDate
-      //var instane = new MagicInfoServerV4RestApi.EnvironmentNoticeFilter();
+      //var instane = new MagicInfoApi.EnvironmentNoticeFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property noticeId (base name: "noticeId")', function() {
       // uncomment below and update the code to test the property noticeId
-      //var instane = new MagicInfoServerV4RestApi.EnvironmentNoticeFilter();
+      //var instane = new MagicInfoApi.EnvironmentNoticeFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property noticeStartDate (base name: "noticeStartDate")', function() {
       // uncomment below and update the code to test the property noticeStartDate
-      //var instane = new MagicInfoServerV4RestApi.EnvironmentNoticeFilter();
+      //var instane = new MagicInfoApi.EnvironmentNoticeFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property noticeSubject (base name: "noticeSubject")', function() {
       // uncomment below and update the code to test the property noticeSubject
-      //var instane = new MagicInfoServerV4RestApi.EnvironmentNoticeFilter();
+      //var instane = new MagicInfoApi.EnvironmentNoticeFilter();
       //expect(instance).to.be();
     });
 
     it('should have the property noticeTitle (base name: "noticeTitle")', function() {
       // uncomment below and update the code to test the property noticeTitle
-      //var instane = new MagicInfoServerV4RestApi.EnvironmentNoticeFilter();
+      //var instane = new MagicInfoApi.EnvironmentNoticeFilter();
       //expect(instance).to.be();
     });
 

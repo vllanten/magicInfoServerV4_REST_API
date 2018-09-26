@@ -1,4 +1,4 @@
-# MagicInfoServerV4RestApi.Map
+# MagicInfoApi.Map
 
 ## Properties
 Name | Type | Description | Notes

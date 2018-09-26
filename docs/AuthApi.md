@@ -1,4 +1,4 @@
-# MagicInfoServerV4RestApi.AuthApi
+# MagicInfoApi.AuthApi
 
 All URIs are relative to *http://127.0.0.1:7001/MagicInfo*
 
@@ -16,11 +16,11 @@ Authorization
 
 ### Example
 ```javascript
-var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
+var MagicInfoApi = require('magic_info_api');
 
-var apiInstance = new MagicInfoServerV4RestApi.AuthApi();
+var apiInstance = new MagicInfoApi.AuthApi();
 
-var userLogin = new MagicInfoServerV4RestApi.AuthResource(); // AuthResource | resource
+var userLogin = new MagicInfoApi.AuthResource(); // AuthResource | resource
 
 
 var callback = function(error, data, response) {
@@ -60,8 +60,8 @@ Refresh Authorization Token
 
 ### Example
 ```javascript
-var MagicInfoServerV4RestApi = require('magic_info_server_v4_rest_api');
-var defaultClient = MagicInfoServerV4RestApi.ApiClient.instance;
+var MagicInfoApi = require('magic_info_api');
+var defaultClient = MagicInfoApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -69,7 +69,7 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-var apiInstance = new MagicInfoServerV4RestApi.AuthApi();
+var apiInstance = new MagicInfoApi.AuthApi();
 
 var callback = function(error, data, response) {
   if (error) {

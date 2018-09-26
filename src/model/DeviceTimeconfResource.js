@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4 REST API
- * MagicInfo Server V4 REST API
+ * magic info api
+ * magic info api
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./DeviceTimeClockConf'), require('./DeviceTimeHolidayResource'), require('./DeviceTimeTimerConf'), require('./HashMapstringobject'), require('./Timestamp'));
   } else {
     // Browser globals (root is window)
-    if (!root.MagicInfoServerV4RestApi) {
-      root.MagicInfoServerV4RestApi = {};
+    if (!root.MagicInfoApi) {
+      root.MagicInfoApi = {};
     }
-    root.MagicInfoServerV4RestApi.DeviceTimeconfResource = factory(root.MagicInfoServerV4RestApi.ApiClient, root.MagicInfoServerV4RestApi.DeviceTimeClockConf, root.MagicInfoServerV4RestApi.DeviceTimeHolidayResource, root.MagicInfoServerV4RestApi.DeviceTimeTimerConf, root.MagicInfoServerV4RestApi.HashMapstringobject, root.MagicInfoServerV4RestApi.Timestamp);
+    root.MagicInfoApi.DeviceTimeconfResource = factory(root.MagicInfoApi.ApiClient, root.MagicInfoApi.DeviceTimeClockConf, root.MagicInfoApi.DeviceTimeHolidayResource, root.MagicInfoApi.DeviceTimeTimerConf, root.MagicInfoApi.HashMapstringobject, root.MagicInfoApi.Timestamp);
   }
 }(this, function(ApiClient, DeviceTimeClockConf, DeviceTimeHolidayResource, DeviceTimeTimerConf, HashMapstringobject, Timestamp) {
   'use strict';

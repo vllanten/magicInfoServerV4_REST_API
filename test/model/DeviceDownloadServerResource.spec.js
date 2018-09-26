@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4 REST API
- * MagicInfo Server V4 REST API
+ * magic info api
+ * magic info api
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV4RestApi);
+    factory(root.expect, root.MagicInfoApi);
   }
-}(this, function(expect, MagicInfoServerV4RestApi) {
+}(this, function(expect, MagicInfoApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV4RestApi.DeviceDownloadServerResource();
+    instance = new MagicInfoApi.DeviceDownloadServerResource();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,31 +52,31 @@
   describe('DeviceDownloadServerResource', function() {
     it('should create an instance of DeviceDownloadServerResource', function() {
       // uncomment below and update the code to test DeviceDownloadServerResource
-      //var instane = new MagicInfoServerV4RestApi.DeviceDownloadServerResource();
-      //expect(instance).to.be.a(MagicInfoServerV4RestApi.DeviceDownloadServerResource);
+      //var instane = new MagicInfoApi.DeviceDownloadServerResource();
+      //expect(instance).to.be.a(MagicInfoApi.DeviceDownloadServerResource);
     });
 
     it('should have the property ftpPort (base name: "ftpPort")', function() {
       // uncomment below and update the code to test the property ftpPort
-      //var instane = new MagicInfoServerV4RestApi.DeviceDownloadServerResource();
+      //var instane = new MagicInfoApi.DeviceDownloadServerResource();
       //expect(instance).to.be();
     });
 
     it('should have the property hostName (base name: "hostName")', function() {
       // uncomment below and update the code to test the property hostName
-      //var instane = new MagicInfoServerV4RestApi.DeviceDownloadServerResource();
+      //var instane = new MagicInfoApi.DeviceDownloadServerResource();
       //expect(instance).to.be();
     });
 
     it('should have the property ipAddress (base name: "ipAddress")', function() {
       // uncomment below and update the code to test the property ipAddress
-      //var instane = new MagicInfoServerV4RestApi.DeviceDownloadServerResource();
+      //var instane = new MagicInfoApi.DeviceDownloadServerResource();
       //expect(instance).to.be();
     });
 
     it('should have the property selected (base name: "selected")', function() {
       // uncomment below and update the code to test the property selected
-      //var instane = new MagicInfoServerV4RestApi.DeviceDownloadServerResource();
+      //var instane = new MagicInfoApi.DeviceDownloadServerResource();
       //expect(instance).to.be();
     });
 

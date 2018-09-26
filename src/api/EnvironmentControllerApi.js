@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4 REST API
- * MagicInfo Server V4 REST API
+ * magic info api
+ * magic info api
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/EnvironmentNoticeFilter'), require('../model/EnvironmentPriorityFilter'), require('../model/Error'), require('../model/ResponseBody'), require('../model/TagResource'));
   } else {
     // Browser globals (root is window)
-    if (!root.MagicInfoServerV4RestApi) {
-      root.MagicInfoServerV4RestApi = {};
+    if (!root.MagicInfoApi) {
+      root.MagicInfoApi = {};
     }
-    root.MagicInfoServerV4RestApi.EnvironmentControllerApi = factory(root.MagicInfoServerV4RestApi.ApiClient, root.MagicInfoServerV4RestApi.EnvironmentNoticeFilter, root.MagicInfoServerV4RestApi.EnvironmentPriorityFilter, root.MagicInfoServerV4RestApi.Error, root.MagicInfoServerV4RestApi.ResponseBody, root.MagicInfoServerV4RestApi.TagResource);
+    root.MagicInfoApi.EnvironmentControllerApi = factory(root.MagicInfoApi.ApiClient, root.MagicInfoApi.EnvironmentNoticeFilter, root.MagicInfoApi.EnvironmentPriorityFilter, root.MagicInfoApi.Error, root.MagicInfoApi.ResponseBody, root.MagicInfoApi.TagResource);
   }
 }(this, function(ApiClient, EnvironmentNoticeFilter, EnvironmentPriorityFilter, Error, ResponseBody, TagResource) {
   'use strict';

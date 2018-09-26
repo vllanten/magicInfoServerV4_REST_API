@@ -1,4 +1,4 @@
-# MagicInfoServerV4RestApi.DeviceLedCabinetResource
+# MagicInfoApi.DeviceLedCabinetResource
 
 ## Properties
 Name | Type | Description | Notes

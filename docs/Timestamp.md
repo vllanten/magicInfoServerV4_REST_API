@@ -1,4 +1,4 @@
-# MagicInfoServerV4RestApi.Timestamp
+# MagicInfoApi.Timestamp
 
 ## Properties
 Name | Type | Description | Notes

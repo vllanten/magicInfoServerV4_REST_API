@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4 REST API
- * MagicInfo Server V4 REST API
+ * magic info api
+ * magic info api
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.MagicInfoServerV4RestApi);
+    factory(root.expect, root.MagicInfoApi);
   }
-}(this, function(expect, MagicInfoServerV4RestApi) {
+}(this, function(expect, MagicInfoApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new MagicInfoServerV4RestApi.Response();
+    instance = new MagicInfoApi.Response();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,31 +52,31 @@
   describe('Response', function() {
     it('should create an instance of Response', function() {
       // uncomment below and update the code to test Response
-      //var instane = new MagicInfoServerV4RestApi.Response();
-      //expect(instance).to.be.a(MagicInfoServerV4RestApi.Response);
+      //var instane = new MagicInfoApi.Response();
+      //expect(instance).to.be.a(MagicInfoApi.Response);
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instane = new MagicInfoServerV4RestApi.Response();
+      //var instane = new MagicInfoApi.Response();
       //expect(instance).to.be();
     });
 
     it('should have the property examples (base name: "examples")', function() {
       // uncomment below and update the code to test the property examples
-      //var instane = new MagicInfoServerV4RestApi.Response();
+      //var instane = new MagicInfoApi.Response();
       //expect(instance).to.be();
     });
 
     it('should have the property headers (base name: "headers")', function() {
       // uncomment below and update the code to test the property headers
-      //var instane = new MagicInfoServerV4RestApi.Response();
+      //var instane = new MagicInfoApi.Response();
       //expect(instance).to.be();
     });
 
     it('should have the property schema (base name: "schema")', function() {
       // uncomment below and update the code to test the property schema
-      //var instane = new MagicInfoServerV4RestApi.Response();
+      //var instane = new MagicInfoApi.Response();
       //expect(instance).to.be();
     });
 

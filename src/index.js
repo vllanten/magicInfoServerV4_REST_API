@@ -1,6 +1,6 @@
 /**
- * MagicInfo Server V4 REST API
- * MagicInfo Server V4 REST API
+ * magic info api
+ * magic info api
  *
  * OpenAPI spec version: 1.0.0
  *
@@ -25,14 +25,14 @@
   'use strict';
 
   /**
-   * MagicInfo_Server_V4_REST_API.<br>
+   * magic_info_api.<br>
    * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
    * <p>
    * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
    * <pre>
-   * var MagicInfoServerV4RestApi = require('index'); // See note below*.
-   * var xxxSvc = new MagicInfoServerV4RestApi.XxxApi(); // Allocate the API class we're going to use.
-   * var yyyModel = new MagicInfoServerV4RestApi.Yyy(); // Construct a model instance.
+   * var MagicInfoApi = require('index'); // See note below*.
+   * var xxxSvc = new MagicInfoApi.XxxApi(); // Allocate the API class we're going to use.
+   * var yyyModel = new MagicInfoApi.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
    * ...
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -44,8 +44,8 @@
    * <p>
    * A non-AMD browser application (discouraged) might do something like this:
    * <pre>
-   * var xxxSvc = new MagicInfoServerV4RestApi.XxxApi(); // Allocate the API class we're going to use.
-   * var yyy = new MagicInfoServerV4RestApi.Yyy(); // Construct a model instance.
+   * var xxxSvc = new MagicInfoApi.XxxApi(); // Allocate the API class we're going to use.
+   * var yyy = new MagicInfoApi.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
    * ...
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.

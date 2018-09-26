@@ -1,4 +1,4 @@
-# MagicInfoServerV4RestApi.Xml
+# MagicInfoApi.Xml
 
 ## Properties
 Name | Type | Description | Notes

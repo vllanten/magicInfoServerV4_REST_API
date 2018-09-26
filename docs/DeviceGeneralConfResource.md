@@ -1,4 +1,4 @@
-# MagicInfoServerV4RestApi.DeviceGeneralConfResource
+# MagicInfoApi.DeviceGeneralConfResource
 
 ## Properties
 Name | Type | Description | Notes
